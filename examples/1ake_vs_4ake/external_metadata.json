@@ -1,0 +1,46 @@
+{
+  "fetched_at": "2026-04-09T18:30:00.000000+00:00",
+  "structures": {
+    "1AKE": {
+      "pdb_title": "STRUCTURE OF THE COMPLEX BETWEEN ADENYLATE KINASE FROM ESCHERICHIA COLI AND THE INHIBITOR AP5A REFINED AT 1.9 ANGSTROMS RESOLUTION: A MODEL FOR A CATALYTIC TRANSITION STATE",
+      "source": "togomcp:search_pdb_entity",
+      "fetch_ok": true,
+      "error": null
+    },
+    "4AKE": {
+      "pdb_title": "ADENYLATE KINASE",
+      "source": "togomcp:search_pdb_entity",
+      "fetch_ok": true,
+      "error": null
+    }
+  },
+  "uniprot_mapping": {
+    "pairs": [["1AKE", "P69441"], ["4AKE", "P69441"]],
+    "source": "togomcp:togoid_convertId",
+    "fetch_ok": true,
+    "error": null
+  },
+  "uniprot_entries": {
+    "P69441": {
+      "protein_names": "Adenylate kinase (AK) (EC 2.7.4.3) (ATP-AMP transphosphorylase) (ATP:AMP phosphotransferase) (Adenylate monophosphate kinase)",
+      "organism": "Escherichia coli (strain K12)",
+      "source": "togomcp:search_uniprot_entity",
+      "fetch_ok": true,
+      "error": null
+    }
+  },
+  "uniprot_sparql": {
+    "P69441": {
+      "function": "Catalyzes the reversible transfer of the terminal phosphate group between ATP and AMP. Plays an important role in cellular energy homeostasis and in adenine nucleotide metabolism. Domain organization: consists of three domains, a large central CORE domain and two small peripheral domains, NMPbind and LID, which undergo movements during catalysis. The LID domain closes over the site of phosphoryl transfer upon ATP binding. Assembling and disassembling the active center during each catalytic cycle provides an effective means to prevent ATP hydrolysis.",
+      "keywords": [],
+      "domains": [
+        {"name": "NMP", "range": "30-59"},
+        {"name": "LID", "range": "122-159"}
+      ],
+      "source": "togomcp:run_sparql",
+      "fetch_ok": true,
+      "error": null
+    }
+  },
+  "warnings": []
+}
