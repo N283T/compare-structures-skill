@@ -8,6 +8,7 @@ __pycache__/
 
 # uv
 .venv/
+uv.lock
 
 # Analysis runs (user-generated output)
 runs/
