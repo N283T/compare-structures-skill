@@ -1,8 +1,9 @@
 # compare-structures-skill
 
 A Claude Code skill that compares two protein structures via headless
-ChimeraX and produces a Japanese analytical report grounded strictly in
-computed facts.
+ChimeraX and produces a rich English analytical report grounded in
+run-derived facts and togomcp-fetched database context, plus a short
+Japanese chat summary returned to the user.
 
 Given two PDB IDs (or two structure files), this skill:
 
@@ -11,29 +12,48 @@ Given two PDB IDs (or two structure files), this skill:
    altloc information.
 3. Clusters contiguous high-displacement residues into moved regions.
 4. Writes a `facts.json` with all computed metrics.
-5. Generates a Japanese `report.md` that describes only what the analysis
-   found — no literature background, no mechanistic interpretation, no
-   training-data priors.
+5. Fetches structural metadata (PDB titles, UniProt accessions, protein
+   names, organisms, function, keywords, domains) via togomcp and
+   persists it to `external_metadata.json`.
+6. Generates a rich English `report.md` that interleaves tables,
+   paragraphs, and bullets. All run-derived numbers must trace to
+   `facts.json`; all DB-derived facts carry provenance markers (`per
+   RCSB`, `per UniProt ...`, `per togomcp ...`). Training-data
+   background is allowed but must be marked `(general background)` and
+   tied to a specific run feature.
+7. Replies to the user in Japanese (2–5 lines) summarizing headline
+   metrics and artifact paths.
 
 ## Artifacts per run
 
 ```
 runs/<id1>_vs_<id2>_<timestamp>/
-├── report.md       # Japanese analytical report (user-facing)
-├── aligned.cif     # Matchmaker-superposed structures (both models)
-├── facts.json      # Fact sheet that Claude reads when writing report.md
-└── raw.json        # Raw data dumped by chimerax_script.py (debug aid)
+├── report.md               # Rich English analytical report (user-facing)
+├── aligned.cif             # Matchmaker-superposed structures (both models)
+├── facts.json              # Fact sheet that Claude reads when writing report.md
+├── external_metadata.json  # togomcp-fetched PDB/UniProt metadata (schema-validated)
+└── raw.json                # Raw data dumped by chimerax_script.py (debug aid)
 ```
 
 ## Installation
 
-This skill is designed to live under `~/.claude/skills/compare-structures/`
-via Nix + Home Manager (see `~/dotfiles`). For development, clone this repo
-and symlink it:
+Claude Code looks up skills under `~/.claude/skills/<skill-name>/`. To
+install this skill, make its repo contents available at
+`~/.claude/skills/compare-structures/` by any method you prefer:
 
 ```bash
+# Option A: clone directly
+git clone https://github.com/N283T/compare-structures-skill ~/.claude/skills/compare-structures
+
+# Option B: clone anywhere, then symlink
+git clone https://github.com/N283T/compare-structures-skill /path/to/compare-structures-skill
 ln -s /path/to/compare-structures-skill ~/.claude/skills/compare-structures
 ```
+
+If you manage your environment with Nix + Home Manager, you can instead
+deploy the skill declaratively from your dotfiles flake — see the
+[Home Manager manual](https://nix-community.github.io/home-manager/) for
+the `home.file` / `xdg.configFile` patterns.
 
 ## Requirements
 
@@ -51,17 +71,20 @@ ln -s /path/to/compare-structures-skill ~/.claude/skills/compare-structures
 
 A reference run of the canonical adenylate kinase open/closed pair is
 committed under [`examples/1ake_vs_4ake/`](examples/1ake_vs_4ake/). It
-includes the four artifacts of a real analysis:
+includes the five artifacts of a real analysis:
 
-- [`report.md`](examples/1ake_vs_4ake/report.md) — Japanese analytical report
+- [`report.md`](examples/1ake_vs_4ake/report.md) — rich English analytical report
 - [`facts.json`](examples/1ake_vs_4ake/facts.json) — computed fact sheet
+- [`external_metadata.json`](examples/1ake_vs_4ake/external_metadata.json) — togomcp-fetched PDB/UniProt metadata
 - `aligned.cif` — matchmaker-superposed structures (two models)
 - `raw.json` — raw ChimeraX extraction
 
-The report identifies two moved regions (A/32-70 and A/117-166) with
-overall Cα RMSD ≈ 8.24 Å, corresponding to the NMP-binding and LID domain
-motions of *E. coli* adenylate kinase — without naming those domains, per
-the skill's strict no-background-knowledge rule.
+The report identifies two moved regions (A/32–70 and A/117–166) with
+overall Cα RMSD ≈ 8.24 Å over 214 aligned residues. Both structures
+map to UniProt P69441 (*E. coli* adenylate kinase), so the report names
+the CORE / NMPbind / LID three-domain architecture with `per UniProt`
+provenance — run-derived numbers and DB-derived context are kept
+visually separable via provenance markers.
 
 ## Running tests
 
@@ -79,6 +102,13 @@ uv run --with pytest --with numpy --with jsonschema --with click pytest -v -m ch
 
 ## Documentation
 
-- [Design spec](docs/superpowers/specs/2026-04-09-compare-structures-design.md)
-- [Implementation plan](docs/superpowers/plans/2026-04-09-compare-structures-implementation.md)
+Current (rich-report redesign):
+
+- [Rich report design spec](docs/superpowers/specs/2026-04-09-compare-structures-rich-report-redesign.md)
+- [Rich report implementation plan](docs/superpowers/plans/2026-04-09-compare-structures-rich-report-plan.md)
 - [Manual review checklist](docs/manual_review_checklist.md)
+
+Historical (pre-rich-report pipeline design):
+
+- [Initial design spec](docs/superpowers/specs/2026-04-09-compare-structures-design.md)
+- [Initial implementation plan](docs/superpowers/plans/2026-04-09-compare-structures-implementation.md)
