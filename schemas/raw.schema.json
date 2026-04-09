@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "compare-structures raw.json",
+  "type": "object",
+  "required": ["input1", "input2", "matchmaker", "chains", "schema_version"],
+  "properties": {
+    "input1": {"$ref": "#/$defs/input"},
+    "input2": {"$ref": "#/$defs/input"},
+    "matchmaker": {
+      "type": "object",
+      "required": ["reference_model", "moved_model", "full_rmsd", "final_rmsd", "n_full_pairs", "n_final_pairs"],
+      "properties": {
+        "reference_model": {"type": "integer"},
+        "moved_model": {"type": "integer"},
+        "full_rmsd": {"type": "number"},
+        "final_rmsd": {"type": "number"},
+        "n_full_pairs": {"type": "integer"},
+        "n_final_pairs": {"type": "integer"},
+        "per_chain": {"type": "array"}
+      }
+    },
+    "chains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chain_id", "model", "residues"],
+        "properties": {
+          "chain_id": {"type": "string"},
+          "model": {"type": "integer"},
+          "residues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["res_num", "res_name", "ca_coord", "sasa", "ss_type"],
+              "properties": {
+                "res_num": {"type": "integer"},
+                "res_name": {"type": "string"},
+                "ca_coord": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3},
+                "sasa": {"type": "number"},
+                "ss_type": {"type": "string", "enum": ["H", "E", "C"]},
+                "altloc_ids": {"type": "array", "items": {"type": "string"}},
+                "max_occupancy": {"type": "number"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "chimerax_version": {"type": "string"},
+    "schema_version": {"type": "string"}
+  },
+  "$defs": {
+    "input": {
+      "type": "object",
+      "required": ["id", "source", "model_id"],
+      "properties": {
+        "id": {"type": "string"},
+        "source": {"type": "string", "enum": ["pdb_id", "file"]},
+        "model_id": {"type": "integer"}
+      }
+    }
+  }
+}

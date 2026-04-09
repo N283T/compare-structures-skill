@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "compare-structures error.json",
+  "type": "object",
+  "required": ["error_type", "message", "stage", "schema_version"],
+  "properties": {
+    "error_type": {"type": "string"},
+    "message": {"type": "string"},
+    "stage": {"type": "string", "enum": ["validation", "chimerax_script", "analyze_post"]},
+    "stderr_tail": {"type": "string"},
+    "schema_version": {"type": "string"}
+  }
+}

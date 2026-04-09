@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "compare-structures facts.json",
+  "type": "object",
+  "required": ["inputs", "alignment", "chain_summary", "moved_regions", "drill_down_flags", "artifacts", "meta"],
+  "properties": {
+    "inputs": {
+      "type": "object",
+      "required": ["structure_1", "structure_2"],
+      "properties": {
+        "structure_1": {"type": "object"},
+        "structure_2": {"type": "object"}
+      }
+    },
+    "alignment": {
+      "type": "object",
+      "required": ["method", "overall_rmsd_angstrom", "n_aligned_residues", "sequence_identity"],
+      "properties": {
+        "method": {"type": "string"},
+        "reference": {"type": ["string", "null"]},
+        "moved": {"type": ["string", "null"]},
+        "overall_rmsd_angstrom": {"type": "number"},
+        "refined_rmsd_angstrom": {"type": "number"},
+        "n_aligned_residues": {"type": "integer"},
+        "sequence_identity": {"type": "number"}
+      }
+    },
+    "chain_summary": {"type": "array"},
+    "moved_regions": {"type": "array"},
+    "top_ca_movers": {"type": "array"},
+    "sasa_changes": {"type": "object"},
+    "ss_changes": {"type": "array"},
+    "altloc_residues": {
+      "type": "object",
+      "properties": {
+        "structure_1": {"type": "array"},
+        "structure_2": {"type": "array"}
+      }
+    },
+    "drill_down_flags": {
+      "type": "object",
+      "required": ["report_residue_level", "report_sasa", "report_ss_changes"],
+      "properties": {
+        "report_residue_level": {"type": "boolean"},
+        "report_sasa": {"type": "boolean"},
+        "report_ss_changes": {"type": "boolean"},
+        "reasons": {"type": "object"}
+      }
+    },
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "condition": {"type": ["string", "null"]},
+    "artifacts": {
+      "type": "object",
+      "required": ["aligned_structure"],
+      "properties": {
+        "aligned_structure": {"type": "string"}
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["schema_version", "generated_at"],
+      "properties": {
+        "schema_version": {"type": "string"},
+        "chimerax_version": {"type": "string"},
+        "generated_at": {"type": "string"}
+      }
+    }
+  }
+}
