@@ -1,0 +1,28 @@
+[project]
+name = "compare-structures-skill"
+version = "0.0.1"
+description = "Claude Code skill comparing two protein structures via ChimeraX"
+requires-python = ">=3.12"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "numpy>=2.0",
+    "jsonschema>=4.20",
+    "click>=8.1",
+    "ruff>=0.4",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "chimerax: integration tests that require a ChimeraX installation (opt-in)",
+]
+addopts = "-ra --strict-markers"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4"]
