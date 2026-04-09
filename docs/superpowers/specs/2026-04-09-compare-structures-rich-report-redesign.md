@@ -73,6 +73,7 @@ These were settled during the brainstorming session on 2026-04-09.
 
 - `templates/report_prompt.md` — full rewrite (new structure, English, provenance markers, togomcp integration instructions)
 - `SKILL.md` — workflow steps 5–8 rewritten, hard constraints rewritten, `allowed-tools` frontmatter updated
+- `docs/manual_review_checklist.md` — full rewrite. The existing file enforces the old no-background-knowledge rule and Japanese length constraint, both of which the new design explicitly reverses. The new checklist covers rich-format structural invariants, provenance-marker presence, graceful-degradation checks, and condition-variant checks.
 
 **Added:**
 
@@ -82,7 +83,7 @@ These were settled during the brainstorming session on 2026-04-09.
 - `tests/test_external_metadata_schema.py`
 - `tests/test_report_prompt_lint.py`
 - `tests/test_example_report_snapshot.py`
-- Manual-review entries appended to `docs/manual_review_checklist.md`
+- `tests/fixtures/external_metadata/` — fixtures for schema test (all-success, partial-failure, full-failure variants)
 
 ### 4.2 New data flow
 
@@ -426,7 +427,7 @@ This is a loose snapshot: the prose content is not fixed, only structure and pro
 
 ### 7.5 Graceful degradation: manual test
 
-Added to `docs/manual_review_checklist.md`:
+The rewritten `docs/manual_review_checklist.md` includes these graceful-degradation entries:
 
 - [ ] Simulate full togomcp failure by manually setting every `fetch_ok: false` in `examples/1ake_vs_4ake/external_metadata.json` and regenerating `report.md`. Verify Section 4 opens with "Structural context assembled from training data only; live DB lookup unavailable" and Sections 1–3 / 5–10 remain functionally correct
 - [ ] Simulate partial failure (only SPARQL fails). Verify UniProt function/keyword content is absent but PDB title and UniProt basic identity remain
