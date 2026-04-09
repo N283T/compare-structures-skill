@@ -1,0 +1,6038 @@
+{
+  "input1": {
+    "id": "1AKE",
+    "source": "pdb_id",
+    "model_id": 1
+  },
+  "input2": {
+    "id": "4AKE",
+    "source": "pdb_id",
+    "model_id": 2
+  },
+  "matchmaker": {
+    "reference_model": 1,
+    "moved_model": 2,
+    "full_rmsd": 8.240263184004824,
+    "final_rmsd": 1.082836956871242,
+    "n_full_pairs": 214,
+    "n_final_pairs": 112,
+    "per_chain": [
+      {
+        "n_full": 214,
+        "n_final": 112,
+        "full_rmsd": 8.240263184004824,
+        "final_rmsd": 1.082836956871242
+      }
+    ]
+  },
+  "chains": [
+    {
+      "chain_id": "A",
+      "model": 1,
+      "residues": [
+        {
+          "chain_id": "A",
+          "res_num": 1,
+          "res_name": "MET",
+          "ca_coord": [
+            26.091,
+            52.849000000000004,
+            39.889
+          ],
+          "sasa": 55.085079858829076,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 2,
+          "res_name": "ARG",
+          "ca_coord": [
+            27.437,
+            49.969,
+            37.786
+          ],
+          "sasa": 38.63355252694037,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 3,
+          "res_name": "ILE",
+          "ca_coord": [
+            24.961000000000002,
+            47.988,
+            35.671
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 4,
+          "res_name": "ILE",
+          "ca_coord": [
+            25.194,
+            44.925000000000004,
+            33.36
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 5,
+          "res_name": "LEU",
+          "ca_coord": [
+            22.428,
+            44.503,
+            30.712
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 6,
+          "res_name": "LEU",
+          "ca_coord": [
+            21.933,
+            40.811,
+            29.752
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 7,
+          "res_name": "GLY",
+          "ca_coord": [
+            19.604,
+            39.512,
+            26.973
+          ],
+          "sasa": 0.02667753242396079,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 8,
+          "res_name": "ALA",
+          "ca_coord": [
+            19.324,
+            37.742,
+            23.567
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 9,
+          "res_name": "PRO",
+          "ca_coord": [
+            20.108,
+            39.651,
+            20.294
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 10,
+          "res_name": "GLY",
+          "ca_coord": [
+            17.487000000000002,
+            42.426,
+            19.756
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 11,
+          "res_name": "ALA",
+          "ca_coord": [
+            15.96,
+            42.201,
+            23.284
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 12,
+          "res_name": "GLY",
+          "ca_coord": [
+            16.082,
+            46.035000000000004,
+            23.547
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 13,
+          "res_name": "LYS",
+          "ca_coord": [
+            19.303,
+            46.427,
+            25.595
+          ],
+          "sasa": -1.0103936357562255e-13,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 14,
+          "res_name": "GLY",
+          "ca_coord": [
+            20.816,
+            49.254,
+            23.528000000000002
+          ],
+          "sasa": 4.203993621963434,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 15,
+          "res_name": "THR",
+          "ca_coord": [
+            17.421,
+            51.124,
+            23.373
+          ],
+          "sasa": 0.26332748773845893,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 16,
+          "res_name": "GLN",
+          "ca_coord": [
+            17.135,
+            51.071,
+            27.21
+          ],
+          "sasa": -5.0192341670180114e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 17,
+          "res_name": "ALA",
+          "ca_coord": [
+            20.821,
+            51.825,
+            27.722
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 18,
+          "res_name": "GLN",
+          "ca_coord": [
+            20.249,
+            55.314,
+            26.080000000000002
+          ],
+          "sasa": 14.115295747879252,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 19,
+          "res_name": "PHE",
+          "ca_coord": [
+            17.474,
+            56.050000000000004,
+            28.712
+          ],
+          "sasa": 5.80164104149565e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 20,
+          "res_name": "ILE",
+          "ca_coord": [
+            19.532,
+            54.877,
+            31.696
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 21,
+          "res_name": "MET",
+          "ca_coord": [
+            22.441,
+            56.903,
+            30.479
+          ],
+          "sasa": 30.24208139103378,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 22,
+          "res_name": "GLU",
+          "ca_coord": [
+            20.467,
+            60.117000000000004,
+            30.02
+          ],
+          "sasa": 112.03219955472866,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 23,
+          "res_name": "LYS",
+          "ca_coord": [
+            18.497,
+            59.71,
+            33.252
+          ],
+          "sasa": 81.8526555980325,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 24,
+          "res_name": "TYR",
+          "ca_coord": [
+            21.269000000000002,
+            58.502,
+            35.566
+          ],
+          "sasa": 48.48706580054353,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 25,
+          "res_name": "GLY",
+          "ca_coord": [
+            24.253,
+            60.217,
+            33.938
+          ],
+          "sasa": 33.677616468019764,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 26,
+          "res_name": "ILE",
+          "ca_coord": [
+            26.346,
+            56.989000000000004,
+            33.707
+          ],
+          "sasa": 8.054797523271967,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 27,
+          "res_name": "PRO",
+          "ca_coord": [
+            28.231,
+            56.198,
+            30.472
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 28,
+          "res_name": "GLN",
+          "ca_coord": [
+            27.118000000000002,
+            53.394,
+            28.303
+          ],
+          "sasa": 8.423503370789952,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 29,
+          "res_name": "ILE",
+          "ca_coord": [
+            30.122,
+            51.105000000000004,
+            27.381
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 30,
+          "res_name": "SER",
+          "ca_coord": [
+            28.78,
+            49.07,
+            24.408
+          ],
+          "sasa": 0.339781254814272,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 31,
+          "res_name": "THR",
+          "ca_coord": [
+            31.156000000000002,
+            46.587,
+            22.987000000000002
+          ],
+          "sasa": -6.289082583432314e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 32,
+          "res_name": "GLY",
+          "ca_coord": [
+            29.191,
+            46.253,
+            19.704
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 33,
+          "res_name": "ASP",
+          "ca_coord": [
+            29.487000000000002,
+            50.042,
+            19.273
+          ],
+          "sasa": 3.344738955163191,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 34,
+          "res_name": "MET",
+          "ca_coord": [
+            33.184,
+            50.074,
+            20.161
+          ],
+          "sasa": 13.586870605144068,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 35,
+          "res_name": "LEU",
+          "ca_coord": [
+            33.94,
+            47.195,
+            17.763
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 36,
+          "res_name": "ARG",
+          "ca_coord": [
+            31.961000000000002,
+            48.619,
+            14.693
+          ],
+          "sasa": -6.519051859205267e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 37,
+          "res_name": "ALA",
+          "ca_coord": [
+            33.778,
+            51.895,
+            15.373000000000001
+          ],
+          "sasa": 13.132570550299894,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 38,
+          "res_name": "ALA",
+          "ca_coord": [
+            37.207,
+            50.146,
+            15.498000000000001
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 39,
+          "res_name": "VAL",
+          "ca_coord": [
+            36.426,
+            48.279,
+            12.266
+          ],
+          "sasa": 11.973300849490515,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 40,
+          "res_name": "LYS",
+          "ca_coord": [
+            35.384,
+            51.553000000000004,
+            10.65
+          ],
+          "sasa": 76.46754616932593,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 41,
+          "res_name": "SER",
+          "ca_coord": [
+            38.507,
+            53.491,
+            11.905
+          ],
+          "sasa": 61.84739857361458,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 42,
+          "res_name": "GLY",
+          "ca_coord": [
+            40.955,
+            50.617000000000004,
+            11.185
+          ],
+          "sasa": 8.622558480714034,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 43,
+          "res_name": "SER",
+          "ca_coord": [
+            41.976,
+            50.997,
+            14.916
+          ],
+          "sasa": 13.545893093425466,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 44,
+          "res_name": "GLU",
+          "ca_coord": [
+            44.618,
+            48.368,
+            15.772
+          ],
+          "sasa": 84.77574904561854,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 45,
+          "res_name": "LEU",
+          "ca_coord": [
+            42.604,
+            47.255,
+            18.836000000000002
+          ],
+          "sasa": 48.7701938588457,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 46,
+          "res_name": "GLY",
+          "ca_coord": [
+            39.438,
+            45.942,
+            17.303
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 47,
+          "res_name": "LYS",
+          "ca_coord": [
+            39.679,
+            46.226,
+            13.467
+          ],
+          "sasa": 26.88427033868689,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 48,
+          "res_name": "GLN",
+          "ca_coord": [
+            40.193,
+            42.426,
+            13.556000000000001
+          ],
+          "sasa": 52.317736366429514,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 49,
+          "res_name": "ALA",
+          "ca_coord": [
+            36.488,
+            41.903,
+            14.418000000000001
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 50,
+          "res_name": "LYS",
+          "ca_coord": [
+            35.308,
+            42.759,
+            10.917
+          ],
+          "sasa": 89.27877736178723,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 51,
+          "res_name": "ASP",
+          "ca_coord": [
+            34.849000000000004,
+            39.271,
+            9.552
+          ],
+          "sasa": 64.30700659916194,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 52,
+          "res_name": "ILE",
+          "ca_coord": [
+            33.759,
+            37.591,
+            12.753
+          ],
+          "sasa": 13.052368715189566,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 53,
+          "res_name": "MET",
+          "ca_coord": [
+            30.854,
+            40.075,
+            13.253
+          ],
+          "sasa": -7.303804167913854e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 54,
+          "res_name": "ASP",
+          "ca_coord": [
+            29.903000000000002,
+            39.62,
+            9.595
+          ],
+          "sasa": 33.10250746649938,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 55,
+          "res_name": "ALA",
+          "ca_coord": [
+            29.654,
+            35.907000000000004,
+            10.111
+          ],
+          "sasa": 26.783487473824685,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 56,
+          "res_name": "GLY",
+          "ca_coord": [
+            27.438,
+            36.396,
+            13.278
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 57,
+          "res_name": "LYS",
+          "ca_coord": [
+            30.045,
+            35.011,
+            15.563
+          ],
+          "sasa": 69.3627861625948,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 58,
+          "res_name": "LEU",
+          "ca_coord": [
+            31.439,
+            36.126,
+            18.922
+          ],
+          "sasa": 0.3513627614845467,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 59,
+          "res_name": "VAL",
+          "ca_coord": [
+            34.805,
+            38.036,
+            18.787
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 60,
+          "res_name": "THR",
+          "ca_coord": [
+            37.608000000000004,
+            36.412,
+            20.972
+          ],
+          "sasa": 43.26594518032512,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 61,
+          "res_name": "ASP",
+          "ca_coord": [
+            37.300000000000004,
+            37.089,
+            24.665
+          ],
+          "sasa": 0.5939163059891792,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 62,
+          "res_name": "GLU",
+          "ca_coord": [
+            40.905,
+            38.219,
+            24.879
+          ],
+          "sasa": 95.2395228677279,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 63,
+          "res_name": "LEU",
+          "ca_coord": [
+            40.206,
+            41.06,
+            22.376
+          ],
+          "sasa": 29.96975827427071,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 64,
+          "res_name": "VAL",
+          "ca_coord": [
+            36.989000000000004,
+            42.314,
+            23.858
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 65,
+          "res_name": "ILE",
+          "ca_coord": [
+            38.291000000000004,
+            42.205,
+            27.487000000000002
+          ],
+          "sasa": 7.119469436033535,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 66,
+          "res_name": "ALA",
+          "ca_coord": [
+            41.229,
+            44.428000000000004,
+            26.326
+          ],
+          "sasa": 16.52823665573957,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 67,
+          "res_name": "LEU",
+          "ca_coord": [
+            38.822,
+            47.067,
+            24.857
+          ],
+          "sasa": 0.4853137640352918,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 68,
+          "res_name": "VAL",
+          "ca_coord": [
+            36.653,
+            47.149,
+            28.003
+          ],
+          "sasa": 1.9333069003400887,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 69,
+          "res_name": "LYS",
+          "ca_coord": [
+            39.562,
+            47.475,
+            30.424
+          ],
+          "sasa": 35.89801857178655,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 70,
+          "res_name": "GLU",
+          "ca_coord": [
+            40.826,
+            50.385,
+            28.39
+          ],
+          "sasa": 76.88528646856864,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 71,
+          "res_name": "ARG",
+          "ca_coord": [
+            37.492,
+            52.114000000000004,
+            28.408
+          ],
+          "sasa": 22.370399066659694,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 72,
+          "res_name": "ILE",
+          "ca_coord": [
+            36.751,
+            51.628,
+            32.046
+          ],
+          "sasa": 25.602511700093853,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 73,
+          "res_name": "ALA",
+          "ca_coord": [
+            40.118,
+            53.39,
+            32.667
+          ],
+          "sasa": 63.525606276876736,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 74,
+          "res_name": "GLN",
+          "ca_coord": [
+            38.879,
+            56.7,
+            31.105
+          ],
+          "sasa": 85.47086801220465,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 75,
+          "res_name": "GLU",
+          "ca_coord": [
+            37.942,
+            59.347,
+            33.644
+          ],
+          "sasa": 103.66889340500255,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 76,
+          "res_name": "ASP",
+          "ca_coord": [
+            34.169000000000004,
+            59.072,
+            32.914
+          ],
+          "sasa": 33.61562295528991,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 77,
+          "res_name": "CYS",
+          "ca_coord": [
+            34.023,
+            55.549,
+            34.377
+          ],
+          "sasa": 3.189913653846987,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 78,
+          "res_name": "ARG",
+          "ca_coord": [
+            35.295,
+            56.377,
+            37.93
+          ],
+          "sasa": 107.42340604986015,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 79,
+          "res_name": "ASN",
+          "ca_coord": [
+            31.688000000000002,
+            57.065,
+            38.942
+          ],
+          "sasa": 96.01924838534632,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 80,
+          "res_name": "GLY",
+          "ca_coord": [
+            29.874000000000002,
+            54.162,
+            37.301
+          ],
+          "sasa": 0.6399998245051397,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 81,
+          "res_name": "PHE",
+          "ca_coord": [
+            29.106,
+            52.875,
+            33.933
+          ],
+          "sasa": 0.3483583359034282,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 82,
+          "res_name": "LEU",
+          "ca_coord": [
+            26.566,
+            50.72,
+            32.18
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 83,
+          "res_name": "LEU",
+          "ca_coord": [
+            27.916,
+            47.525,
+            30.373
+          ],
+          "sasa": 0.07892622366447652,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 84,
+          "res_name": "ASP",
+          "ca_coord": [
+            25.834,
+            46.813,
+            27.329
+          ],
+          "sasa": 0.3367440223139476,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 85,
+          "res_name": "GLY",
+          "ca_coord": [
+            26.933,
+            43.697,
+            25.483
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 86,
+          "res_name": "PHE",
+          "ca_coord": [
+            29.653000000000002,
+            42.677,
+            27.895
+          ],
+          "sasa": 3.018030938740396,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 87,
+          "res_name": "PRO",
+          "ca_coord": [
+            30.201,
+            40.135,
+            29.493000000000002
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 88,
+          "res_name": "ARG",
+          "ca_coord": [
+            29.055,
+            37.92,
+            26.723
+          ],
+          "sasa": -6.519051859205267e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 89,
+          "res_name": "THR",
+          "ca_coord": [
+            30.715,
+            34.709,
+            27.886
+          ],
+          "sasa": -6.289082583432314e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 90,
+          "res_name": "ILE",
+          "ca_coord": [
+            31.743000000000002,
+            33.11,
+            31.221
+          ],
+          "sasa": 18.372218435271442,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 91,
+          "res_name": "PRO",
+          "ca_coord": [
+            35.535000000000004,
+            33.921,
+            30.568
+          ],
+          "sasa": 15.485675400830873,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 92,
+          "res_name": "GLN",
+          "ca_coord": [
+            34.575,
+            37.605000000000004,
+            30.14
+          ],
+          "sasa": -5.0192341670180114e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 93,
+          "res_name": "ALA",
+          "ca_coord": [
+            32.541000000000004,
+            37.446,
+            33.423
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 94,
+          "res_name": "ASP",
+          "ca_coord": [
+            35.444,
+            35.776,
+            35.246
+          ],
+          "sasa": 24.363744594907953,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 95,
+          "res_name": "ALA",
+          "ca_coord": [
+            37.851,
+            38.413000000000004,
+            33.908
+          ],
+          "sasa": 1.8543794897740105,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 96,
+          "res_name": "MET",
+          "ca_coord": [
+            35.660000000000004,
+            41.143,
+            35.472
+          ],
+          "sasa": 2.8070073647415072,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 97,
+          "res_name": "LYS",
+          "ca_coord": [
+            35.733000000000004,
+            39.148,
+            38.737
+          ],
+          "sasa": 92.22009018452772,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 98,
+          "res_name": "GLU",
+          "ca_coord": [
+            39.569,
+            38.768,
+            38.72
+          ],
+          "sasa": 122.29927049224767,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 99,
+          "res_name": "ALA",
+          "ca_coord": [
+            39.899,
+            42.49,
+            37.999
+          ],
+          "sasa": 24.252101192314974,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 100,
+          "res_name": "GLY",
+          "ca_coord": [
+            37.775,
+            43.86,
+            40.924
+          ],
+          "sasa": 58.8887321955203,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 101,
+          "res_name": "ILE",
+          "ca_coord": [
+            34.864,
+            45.066,
+            38.723
+          ],
+          "sasa": 16.32760308238685,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 102,
+          "res_name": "ASN",
+          "ca_coord": [
+            31.793,
+            44.278,
+            40.733000000000004
+          ],
+          "sasa": 83.61340688184026,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 103,
+          "res_name": "VAL",
+          "ca_coord": [
+            28.372,
+            45.707,
+            39.643
+          ],
+          "sasa": 2.6929578920786277,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 104,
+          "res_name": "ASP",
+          "ca_coord": [
+            25.332,
+            46.877,
+            41.404
+          ],
+          "sasa": 50.34359317694938,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 105,
+          "res_name": "TYR",
+          "ca_coord": [
+            22.614,
+            45.492000000000004,
+            39.142
+          ],
+          "sasa": 24.775082325136026,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 106,
+          "res_name": "VAL",
+          "ca_coord": [
+            22.348,
+            42.878,
+            36.473
+          ],
+          "sasa": 0.0018290134493701737,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 107,
+          "res_name": "LEU",
+          "ca_coord": [
+            19.163,
+            43.331,
+            34.358000000000004
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 108,
+          "res_name": "GLU",
+          "ca_coord": [
+            17.976,
+            40.535000000000004,
+            32.145
+          ],
+          "sasa": 0.07602959187593909,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 109,
+          "res_name": "PHE",
+          "ca_coord": [
+            15.795,
+            41.545,
+            29.219
+          ],
+          "sasa": 5.80164104149565e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 110,
+          "res_name": "ASP",
+          "ca_coord": [
+            13.724,
+            38.46,
+            28.356
+          ],
+          "sasa": 23.447085179321657,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 111,
+          "res_name": "VAL",
+          "ca_coord": [
+            12.261000000000001,
+            38.125,
+            24.898
+          ],
+          "sasa": 0.15473185913629428,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 112,
+          "res_name": "PRO",
+          "ca_coord": [
+            11.073,
+            34.932,
+            23.064
+          ],
+          "sasa": 43.40310554962459,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 113,
+          "res_name": "ASP",
+          "ca_coord": [
+            13.347,
+            33.748,
+            20.186
+          ],
+          "sasa": 6.271214195563598,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 114,
+          "res_name": "GLU",
+          "ca_coord": [
+            10.481,
+            34.0,
+            17.694
+          ],
+          "sasa": 69.539184474048,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 115,
+          "res_name": "LEU",
+          "ca_coord": [
+            10.26,
+            37.817,
+            17.934
+          ],
+          "sasa": 56.245342340750064,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 116,
+          "res_name": "ILE",
+          "ca_coord": [
+            13.933,
+            38.508,
+            17.208000000000002
+          ],
+          "sasa": 0.010004440768520872,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 117,
+          "res_name": "VAL",
+          "ca_coord": [
+            14.225,
+            38.291000000000004,
+            13.469
+          ],
+          "sasa": 5.43345850087265,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 118,
+          "res_name": "ASP",
+          "ca_coord": [
+            11.453,
+            40.992,
+            12.84
+          ],
+          "sasa": 34.04668356311912,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 119,
+          "res_name": "ARG",
+          "ca_coord": [
+            12.823,
+            43.313,
+            15.486
+          ],
+          "sasa": 5.18543425315348,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 120,
+          "res_name": "ILE",
+          "ca_coord": [
+            16.144000000000002,
+            43.201,
+            13.823
+          ],
+          "sasa": 0.5412066112775822,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 121,
+          "res_name": "VAL",
+          "ca_coord": [
+            14.99,
+            43.687,
+            10.181000000000001
+          ],
+          "sasa": 21.54066242030152,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 122,
+          "res_name": "GLY",
+          "ca_coord": [
+            13.285,
+            46.97,
+            11.062
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 123,
+          "res_name": "ARG",
+          "ca_coord": [
+            16.37,
+            48.198,
+            12.993
+          ],
+          "sasa": 0.38141506228045924,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 124,
+          "res_name": "ARG",
+          "ca_coord": [
+            18.075,
+            51.418,
+            11.759
+          ],
+          "sasa": 16.304708420395436,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 125,
+          "res_name": "VAL",
+          "ca_coord": [
+            20.966,
+            53.077,
+            13.531
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 126,
+          "res_name": "HIS",
+          "ca_coord": [
+            22.804000000000002,
+            56.339,
+            13.735
+          ],
+          "sasa": 0.8115741106371224,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 127,
+          "res_name": "ALA",
+          "ca_coord": [
+            26.322,
+            54.841,
+            13.688
+          ],
+          "sasa": 0.0021365298850559286,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 128,
+          "res_name": "PRO",
+          "ca_coord": [
+            28.355,
+            57.764,
+            15.058
+          ],
+          "sasa": 64.83186971512642,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 129,
+          "res_name": "SER",
+          "ca_coord": [
+            26.333000000000002,
+            57.776,
+            18.239
+          ],
+          "sasa": 7.416886033350936,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 130,
+          "res_name": "GLY",
+          "ca_coord": [
+            25.086000000000002,
+            54.264,
+            18.402
+          ],
+          "sasa": 7.613049691558572,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 131,
+          "res_name": "ARG",
+          "ca_coord": [
+            21.452,
+            55.561,
+            18.766000000000002
+          ],
+          "sasa": 22.778702550634396,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 132,
+          "res_name": "VAL",
+          "ca_coord": [
+            18.996,
+            52.896,
+            17.538
+          ],
+          "sasa": 0.993102032957427,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 133,
+          "res_name": "TYR",
+          "ca_coord": [
+            15.513,
+            53.093,
+            16.026
+          ],
+          "sasa": 0.4761950354489385,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 134,
+          "res_name": "HIS",
+          "ca_coord": [
+            12.92,
+            50.671,
+            14.575000000000001
+          ],
+          "sasa": 1.2077273588758514e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 135,
+          "res_name": "VAL",
+          "ca_coord": [
+            10.854000000000001,
+            51.6,
+            11.529
+          ],
+          "sasa": 30.85385240101062,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 136,
+          "res_name": "LYS",
+          "ca_coord": [
+            7.667,
+            50.304,
+            13.237
+          ],
+          "sasa": 77.56176212585781,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 137,
+          "res_name": "PHE",
+          "ca_coord": [
+            8.263,
+            49.977000000000004,
+            16.941
+          ],
+          "sasa": 41.19852447726299,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 138,
+          "res_name": "ASN",
+          "ca_coord": [
+            10.221,
+            53.056000000000004,
+            17.749
+          ],
+          "sasa": 21.058960604323772,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 139,
+          "res_name": "PRO",
+          "ca_coord": [
+            10.584,
+            55.204,
+            14.637
+          ],
+          "sasa": 34.06949694174002,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 140,
+          "res_name": "PRO",
+          "ca_coord": [
+            12.639000000000001,
+            58.484,
+            14.325000000000001
+          ],
+          "sasa": 10.287821892547843,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 141,
+          "res_name": "LYS",
+          "ca_coord": [
+            10.533,
+            61.82,
+            14.450000000000001
+          ],
+          "sasa": 85.39846482956952,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 142,
+          "res_name": "VAL",
+          "ca_coord": [
+            11.505,
+            62.370000000000005,
+            10.828
+          ],
+          "sasa": 43.971290864274984,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 143,
+          "res_name": "GLU",
+          "ca_coord": [
+            11.718,
+            59.172000000000004,
+            8.801
+          ],
+          "sasa": 116.5806423081759,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 144,
+          "res_name": "GLY",
+          "ca_coord": [
+            15.26,
+            58.064,
+            8.028
+          ],
+          "sasa": 1.2015987118656575,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 145,
+          "res_name": "LYS",
+          "ca_coord": [
+            17.037,
+            60.722,
+            10.089
+          ],
+          "sasa": 42.58420278507258,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 146,
+          "res_name": "ASP",
+          "ca_coord": [
+            18.527,
+            60.716,
+            13.497
+          ],
+          "sasa": -6.028131383547641e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 147,
+          "res_name": "ASP",
+          "ca_coord": [
+            16.517,
+            62.933,
+            15.961
+          ],
+          "sasa": 15.451289064720525,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 148,
+          "res_name": "VAL",
+          "ca_coord": [
+            19.53,
+            64.752,
+            17.344
+          ],
+          "sasa": 57.53941509777537,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 149,
+          "res_name": "THR",
+          "ca_coord": [
+            21.763,
+            65.36,
+            14.392
+          ],
+          "sasa": 21.92166913638466,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 150,
+          "res_name": "GLY",
+          "ca_coord": [
+            19.389,
+            65.023,
+            11.444
+          ],
+          "sasa": 13.797328117626819,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 151,
+          "res_name": "GLU",
+          "ca_coord": [
+            21.826,
+            62.57,
+            9.898
+          ],
+          "sasa": 46.2202214130389,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 152,
+          "res_name": "GLU",
+          "ca_coord": [
+            20.683,
+            59.723,
+            7.72
+          ],
+          "sasa": 57.8461658692646,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 153,
+          "res_name": "LEU",
+          "ca_coord": [
+            20.09,
+            56.412,
+            9.516
+          ],
+          "sasa": 8.870964040197771,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 154,
+          "res_name": "THR",
+          "ca_coord": [
+            21.658,
+            53.19,
+            8.095
+          ],
+          "sasa": 46.702476483852,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 155,
+          "res_name": "THR",
+          "ca_coord": [
+            21.171,
+            49.444,
+            8.553
+          ],
+          "sasa": 42.97280918397133,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 156,
+          "res_name": "ARG",
+          "ca_coord": [
+            23.818,
+            47.27,
+            10.158
+          ],
+          "sasa": 0.08818551709018738,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 157,
+          "res_name": "LYS",
+          "ca_coord": [
+            25.618000000000002,
+            44.885,
+            7.852
+          ],
+          "sasa": 75.68398598362876,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 158,
+          "res_name": "ASP",
+          "ca_coord": [
+            25.037,
+            41.923,
+            10.23
+          ],
+          "sasa": -6.028131383547641e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 159,
+          "res_name": "ASP",
+          "ca_coord": [
+            21.262,
+            42.561,
+            10.522
+          ],
+          "sasa": 2.83983361214386,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 160,
+          "res_name": "GLN",
+          "ca_coord": [
+            20.054000000000002,
+            40.082,
+            7.944
+          ],
+          "sasa": 30.46486966618942,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 161,
+          "res_name": "GLU",
+          "ca_coord": [
+            17.942,
+            37.066,
+            8.799
+          ],
+          "sasa": 49.711557462674534,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 162,
+          "res_name": "GLU",
+          "ca_coord": [
+            20.712,
+            34.443,
+            8.506
+          ],
+          "sasa": 65.181510039268,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 163,
+          "res_name": "THR",
+          "ca_coord": [
+            23.378,
+            36.312,
+            10.514
+          ],
+          "sasa": -6.289082583432314e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 164,
+          "res_name": "VAL",
+          "ca_coord": [
+            20.732,
+            36.952,
+            13.256
+          ],
+          "sasa": 0.4149705154242189,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 165,
+          "res_name": "ARG",
+          "ca_coord": [
+            20.001,
+            33.162,
+            13.347
+          ],
+          "sasa": 77.21461808072578,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 166,
+          "res_name": "LYS",
+          "ca_coord": [
+            23.644000000000002,
+            32.45,
+            13.793000000000001
+          ],
+          "sasa": 65.11570744394788,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 167,
+          "res_name": "ARG",
+          "ca_coord": [
+            23.859,
+            35.071,
+            16.525
+          ],
+          "sasa": -6.519051859205267e-14,
+          "ss_type": "H",
+          "altloc_ids": [
+            "A"
+          ],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 168,
+          "res_name": "LEU",
+          "ca_coord": [
+            20.894000000000002,
+            33.428,
+            18.379
+          ],
+          "sasa": 0.604536053765779,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 169,
+          "res_name": "VAL",
+          "ca_coord": [
+            22.603,
+            29.993000000000002,
+            18.47
+          ],
+          "sasa": 3.146781781668583,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 170,
+          "res_name": "GLU",
+          "ca_coord": [
+            25.889,
+            31.549,
+            19.798000000000002
+          ],
+          "sasa": 7.884199883933293,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 171,
+          "res_name": "TYR",
+          "ca_coord": [
+            23.794,
+            33.424,
+            22.374
+          ],
+          "sasa": 0.029905640932554354,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 172,
+          "res_name": "HIS",
+          "ca_coord": [
+            22.188,
+            30.172,
+            23.627
+          ],
+          "sasa": 12.22810209985789,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 173,
+          "res_name": "GLN",
+          "ca_coord": [
+            25.463,
+            28.312,
+            23.673000000000002
+          ],
+          "sasa": 0.2394806546465484,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 174,
+          "res_name": "MET",
+          "ca_coord": [
+            27.78,
+            30.924,
+            25.231
+          ],
+          "sasa": 12.888487040890437,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 175,
+          "res_name": "THR",
+          "ca_coord": [
+            25.882,
+            33.824,
+            26.706
+          ],
+          "sasa": -6.289082583432314e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 176,
+          "res_name": "ALA",
+          "ca_coord": [
+            22.709,
+            32.326,
+            28.101
+          ],
+          "sasa": 0.28784122426272685,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 177,
+          "res_name": "PRO",
+          "ca_coord": [
+            24.84,
+            30.655,
+            30.859
+          ],
+          "sasa": 0.5099796544492424,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 178,
+          "res_name": "LEU",
+          "ca_coord": [
+            25.494,
+            34.116,
+            32.326
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 179,
+          "res_name": "ILE",
+          "ca_coord": [
+            21.847,
+            34.121,
+            33.617
+          ],
+          "sasa": 2.4091700187799554,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 180,
+          "res_name": "GLY",
+          "ca_coord": [
+            22.743000000000002,
+            31.291,
+            36.059
+          ],
+          "sasa": 4.386205383230774,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 181,
+          "res_name": "TYR",
+          "ca_coord": [
+            26.209,
+            32.813,
+            36.742
+          ],
+          "sasa": 9.321685662857275,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 182,
+          "res_name": "TYR",
+          "ca_coord": [
+            24.857,
+            36.175000000000004,
+            37.96
+          ],
+          "sasa": 0.0005096711468296805,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 183,
+          "res_name": "SER",
+          "ca_coord": [
+            21.773,
+            34.685,
+            39.550000000000004
+          ],
+          "sasa": 7.577178220976083,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 184,
+          "res_name": "LYS",
+          "ca_coord": [
+            24.305,
+            32.796,
+            41.74
+          ],
+          "sasa": 114.1176030760781,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 185,
+          "res_name": "GLU",
+          "ca_coord": [
+            26.114,
+            36.11,
+            42.295
+          ],
+          "sasa": 6.982025905867916,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 186,
+          "res_name": "ALA",
+          "ca_coord": [
+            22.815,
+            37.702,
+            43.488
+          ],
+          "sasa": 26.976772760460072,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 187,
+          "res_name": "GLU",
+          "ca_coord": [
+            22.141000000000002,
+            34.782000000000004,
+            45.857
+          ],
+          "sasa": 118.81508683060174,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 188,
+          "res_name": "ALA",
+          "ca_coord": [
+            25.497,
+            35.366,
+            47.468
+          ],
+          "sasa": 31.71499916455432,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 189,
+          "res_name": "GLY",
+          "ca_coord": [
+            24.765,
+            39.076,
+            48.082
+          ],
+          "sasa": 49.910877205832584,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 190,
+          "res_name": "ASN",
+          "ca_coord": [
+            27.363,
+            40.312,
+            45.461
+          ],
+          "sasa": 56.69062814364689,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 191,
+          "res_name": "THR",
+          "ca_coord": [
+            24.855,
+            42.119,
+            43.112
+          ],
+          "sasa": 5.139381135606833,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 192,
+          "res_name": "LYS",
+          "ca_coord": [
+            21.066,
+            42.643,
+            42.614000000000004
+          ],
+          "sasa": 89.43551858622234,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 193,
+          "res_name": "TYR",
+          "ca_coord": [
+            19.512,
+            40.627,
+            39.611000000000004
+          ],
+          "sasa": 29.72635612776961,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 194,
+          "res_name": "ALA",
+          "ca_coord": [
+            16.181,
+            41.854,
+            38.027
+          ],
+          "sasa": 10.566985493427813,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 195,
+          "res_name": "LYS",
+          "ca_coord": [
+            14.39,
+            40.266,
+            35.066
+          ],
+          "sasa": 48.501194895958946,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 196,
+          "res_name": "VAL",
+          "ca_coord": [
+            12.218,
+            42.589,
+            32.815
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 197,
+          "res_name": "ASP",
+          "ca_coord": [
+            9.688,
+            41.664,
+            30.175
+          ],
+          "sasa": 5.196150587089317,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 198,
+          "res_name": "GLY",
+          "ca_coord": [
+            11.316,
+            42.835,
+            26.964000000000002
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 199,
+          "res_name": "THR",
+          "ca_coord": [
+            8.045,
+            42.211,
+            24.904
+          ],
+          "sasa": 22.456874806198776,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 200,
+          "res_name": "LYS",
+          "ca_coord": [
+            6.346,
+            45.271,
+            26.476
+          ],
+          "sasa": 21.35465823082002,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 201,
+          "res_name": "PRO",
+          "ca_coord": [
+            6.324,
+            48.459,
+            24.505
+          ],
+          "sasa": 37.560467499173264,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 202,
+          "res_name": "VAL",
+          "ca_coord": [
+            9.572000000000001,
+            50.527,
+            24.721
+          ],
+          "sasa": 2.5492172755605544,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 203,
+          "res_name": "ALA",
+          "ca_coord": [
+            8.001,
+            53.132,
+            27.123
+          ],
+          "sasa": 32.28438495045716,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 204,
+          "res_name": "GLU",
+          "ca_coord": [
+            6.5920000000000005,
+            50.429,
+            29.321
+          ],
+          "sasa": 64.37287299135832,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 205,
+          "res_name": "VAL",
+          "ca_coord": [
+            9.958,
+            48.634,
+            29.563000000000002
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 206,
+          "res_name": "ARG",
+          "ca_coord": [
+            11.381,
+            52.102000000000004,
+            30.354
+          ],
+          "sasa": 13.218459804644956,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 207,
+          "res_name": "ALA",
+          "ca_coord": [
+            8.907,
+            52.492000000000004,
+            33.247
+          ],
+          "sasa": 25.74390511124283,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 208,
+          "res_name": "ASP",
+          "ca_coord": [
+            9.716000000000001,
+            48.993,
+            34.79
+          ],
+          "sasa": 9.618836463419028,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 209,
+          "res_name": "LEU",
+          "ca_coord": [
+            13.339,
+            49.966,
+            34.772
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 210,
+          "res_name": "GLU",
+          "ca_coord": [
+            12.663,
+            53.230000000000004,
+            36.684
+          ],
+          "sasa": 43.18905867492077,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 211,
+          "res_name": "LYS",
+          "ca_coord": [
+            10.927,
+            51.111000000000004,
+            39.364000000000004
+          ],
+          "sasa": 140.9083687739912,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 212,
+          "res_name": "ILE",
+          "ca_coord": [
+            14.037,
+            48.992000000000004,
+            39.744
+          ],
+          "sasa": 20.98074647931076,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 213,
+          "res_name": "LEU",
+          "ca_coord": [
+            16.624,
+            51.868,
+            39.661
+          ],
+          "sasa": 17.027400709329072,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 214,
+          "res_name": "GLY",
+          "ca_coord": [
+            15.055,
+            55.001,
+            41.318
+          ],
+          "sasa": 84.367628950655,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        }
+      ]
+    },
+    {
+      "chain_id": "A",
+      "model": 2,
+      "residues": [
+        {
+          "chain_id": "A",
+          "res_num": 1,
+          "res_name": "MET",
+          "ca_coord": [
+            25.69167891546836,
+            53.03314822290498,
+            39.02140476590432
+          ],
+          "sasa": 51.16241244403807,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 2,
+          "res_name": "ARG",
+          "ca_coord": [
+            27.296574626296994,
+            50.04725640530212,
+            37.26442644761573
+          ],
+          "sasa": 47.47669657479881,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 3,
+          "res_name": "ILE",
+          "ca_coord": [
+            25.06507540427225,
+            48.03978500830222,
+            35.00692100746056
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 4,
+          "res_name": "ILE",
+          "ca_coord": [
+            25.7076917601836,
+            45.11720665685823,
+            32.639415991882736
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 5,
+          "res_name": "LEU",
+          "ca_coord": [
+            22.953538091592396,
+            44.963668034115486,
+            29.944281030306254
+          ],
+          "sasa": 2.9610730290333813,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 6,
+          "res_name": "LEU",
+          "ca_coord": [
+            22.342515837890495,
+            41.49991056143115,
+            28.429956766515808
+          ],
+          "sasa": 0.000252777923330961,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 7,
+          "res_name": "GLY",
+          "ca_coord": [
+            20.11533582481532,
+            40.621188266480445,
+            25.499746480936455
+          ],
+          "sasa": 2.8051843144668998,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 8,
+          "res_name": "ALA",
+          "ca_coord": [
+            19.780646331733884,
+            38.38641064092501,
+            22.480291744144118
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 9,
+          "res_name": "PRO",
+          "ca_coord": [
+            20.705896294676368,
+            39.79901857228971,
+            19.087333103323328
+          ],
+          "sasa": 27.492037217306056,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 10,
+          "res_name": "GLY",
+          "ca_coord": [
+            17.51231500529862,
+            41.390331575935335,
+            17.733424881705364
+          ],
+          "sasa": 20.019245200726914,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 11,
+          "res_name": "ALA",
+          "ca_coord": [
+            15.731889083823678,
+            41.870262161979674,
+            21.078040580215315
+          ],
+          "sasa": 0.17784523489786513,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 12,
+          "res_name": "GLY",
+          "ca_coord": [
+            16.386839511008276,
+            45.643227239289274,
+            21.079610081059574
+          ],
+          "sasa": 7.480076058221655,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 13,
+          "res_name": "LYS",
+          "ca_coord": [
+            18.035239083706944,
+            46.18603211247476,
+            24.51265402461359
+          ],
+          "sasa": 18.80564815569923,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 14,
+          "res_name": "GLY",
+          "ca_coord": [
+            19.552256369658437,
+            49.330784551825786,
+            23.09038659219446
+          ],
+          "sasa": 19.11756573443438,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 15,
+          "res_name": "THR",
+          "ca_coord": [
+            16.09724652033304,
+            50.933165596665475,
+            23.272899408738823
+          ],
+          "sasa": 45.51614699055121,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 16,
+          "res_name": "GLN",
+          "ca_coord": [
+            16.529061440316386,
+            51.596380136572066,
+            26.976838710203722
+          ],
+          "sasa": 4.113945962382694,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 17,
+          "res_name": "ALA",
+          "ca_coord": [
+            20.16001963344804,
+            52.73038101662762,
+            26.888060313263015
+          ],
+          "sasa": 5.56608409351363,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 18,
+          "res_name": "GLN",
+          "ca_coord": [
+            19.63890398914801,
+            56.47865956551606,
+            26.43622803773534
+          ],
+          "sasa": 124.49310177572863,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 19,
+          "res_name": "PHE",
+          "ca_coord": [
+            17.26587713156463,
+            56.38790159823312,
+            29.388501149180588
+          ],
+          "sasa": 19.33422303131897,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 20,
+          "res_name": "ILE",
+          "ca_coord": [
+            19.822158480992073,
+            54.735851848116305,
+            31.616248505975868
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 21,
+          "res_name": "MET",
+          "ca_coord": [
+            22.595018373691797,
+            57.19135353284195,
+            30.645318801122436
+          ],
+          "sasa": 56.78911986647444,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 22,
+          "res_name": "GLU",
+          "ca_coord": [
+            20.214287628235272,
+            60.11087638815285,
+            31.068920518488298
+          ],
+          "sasa": 98.99522982199613,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 23,
+          "res_name": "LYS",
+          "ca_coord": [
+            18.965011516838803,
+            58.93518396599127,
+            34.43838242300153
+          ],
+          "sasa": 66.95013952801919,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 24,
+          "res_name": "TYR",
+          "ca_coord": [
+            22.355011708471487,
+            58.13927421110796,
+            36.02464228910543
+          ],
+          "sasa": 26.5318887871822,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 25,
+          "res_name": "GLY",
+          "ca_coord": [
+            24.814265768725576,
+            60.232606123413355,
+            34.04458749894239
+          ],
+          "sasa": 43.929516960626934,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 26,
+          "res_name": "ILE",
+          "ca_coord": [
+            26.917027154281342,
+            57.27042269323311,
+            32.93860970468917
+          ],
+          "sasa": 6.364746771355449,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 27,
+          "res_name": "PRO",
+          "ca_coord": [
+            28.249325422493015,
+            56.285618581683984,
+            29.505799167185522
+          ],
+          "sasa": 16.15616069474982,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 28,
+          "res_name": "GLN",
+          "ca_coord": [
+            27.675199970580984,
+            53.21199025352187,
+            27.37267051054379
+          ],
+          "sasa": 37.13180206023157,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 29,
+          "res_name": "ILE",
+          "ca_coord": [
+            30.78579809237737,
+            51.120013076433004,
+            26.93384501536817
+          ],
+          "sasa": 0.13453301805754786,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 30,
+          "res_name": "SER",
+          "ca_coord": [
+            30.83472279260262,
+            48.316171618378874,
+            24.425181336872235
+          ],
+          "sasa": 4.54727409631744,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 31,
+          "res_name": "THR",
+          "ca_coord": [
+            33.94571731291803,
+            46.25195027218614,
+            23.628661199970626
+          ],
+          "sasa": 3.898578055007087,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 32,
+          "res_name": "GLY",
+          "ca_coord": [
+            33.849438334436954,
+            47.08326252680249,
+            19.939496620607525
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 33,
+          "res_name": "ASP",
+          "ca_coord": [
+            33.900868053672255,
+            50.80317128559838,
+            20.708050333898264
+          ],
+          "sasa": 43.502808716627854,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 34,
+          "res_name": "MET",
+          "ca_coord": [
+            36.51223752057896,
+            50.43504960131203,
+            23.4036278105933
+          ],
+          "sasa": 2.9793691346865625,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 35,
+          "res_name": "LEU",
+          "ca_coord": [
+            38.84849511476813,
+            48.41173768765876,
+            21.191638806628283
+          ],
+          "sasa": 15.257943130217209,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 36,
+          "res_name": "ARG",
+          "ca_coord": [
+            38.56252175879331,
+            50.90248064633536,
+            18.3539034853773
+          ],
+          "sasa": 29.900903704894784,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 37,
+          "res_name": "ALA",
+          "ca_coord": [
+            39.43262627453792,
+            53.63048138324215,
+            20.918517903007533
+          ],
+          "sasa": 10.260232685067868,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 38,
+          "res_name": "ALA",
+          "ca_coord": [
+            42.53707158398114,
+            51.99522164477064,
+            22.456652782792155
+          ],
+          "sasa": 3.127141960722091,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 39,
+          "res_name": "VAL",
+          "ca_coord": [
+            44.25093341880866,
+            51.63640843224323,
+            19.09582584740298
+          ],
+          "sasa": 10.267129103596249,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 40,
+          "res_name": "LYS",
+          "ca_coord": [
+            43.803760031962625,
+            55.31006266741479,
+            18.188062925433442
+          ],
+          "sasa": 149.31305658846338,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 41,
+          "res_name": "SER",
+          "ca_coord": [
+            45.10060091246609,
+            56.578512527700255,
+            21.512996561251875
+          ],
+          "sasa": 68.8535499477546,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 42,
+          "res_name": "GLY",
+          "ca_coord": [
+            48.312654634503005,
+            54.614416430521956,
+            21.15493733738267
+          ],
+          "sasa": 47.283467220456046,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 43,
+          "res_name": "SER",
+          "ca_coord": [
+            48.57175062324142,
+            53.503066756649154,
+            24.73854783114486
+          ],
+          "sasa": 34.80665599013767,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 44,
+          "res_name": "GLU",
+          "ca_coord": [
+            50.44162719346723,
+            50.323902183651974,
+            25.70092417640707
+          ],
+          "sasa": 73.21144066182153,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 45,
+          "res_name": "LEU",
+          "ca_coord": [
+            47.33284158192481,
+            48.10065459352417,
+            25.5416251668126
+          ],
+          "sasa": 38.191640716871206,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 46,
+          "res_name": "GLY",
+          "ca_coord": [
+            45.98744052481624,
+            49.94016652887487,
+            22.473583309987063
+          ],
+          "sasa": -1.3734681591375843e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 47,
+          "res_name": "LYS",
+          "ca_coord": [
+            49.12427234837609,
+            49.14397745367528,
+            20.563570203426004
+          ],
+          "sasa": 95.90520892861093,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 48,
+          "res_name": "GLN",
+          "ca_coord": [
+            48.871708209755866,
+            45.50037844815713,
+            21.71348613203565
+          ],
+          "sasa": 45.708055879029175,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 49,
+          "res_name": "ALA",
+          "ca_coord": [
+            45.27879761021191,
+            45.41409420535848,
+            20.45943571314119
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 50,
+          "res_name": "LYS",
+          "ca_coord": [
+            45.96166772084087,
+            47.27916084787952,
+            17.201470116182733
+          ],
+          "sasa": 66.81117891492542,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 51,
+          "res_name": "ASP",
+          "ca_coord": [
+            48.452728961201736,
+            44.6153147063382,
+            16.088275330456877
+          ],
+          "sasa": 69.25557498433923,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 52,
+          "res_name": "ILE",
+          "ca_coord": [
+            46.11568977658506,
+            41.74796445054872,
+            16.9581008073143
+          ],
+          "sasa": 18.380969982593605,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 53,
+          "res_name": "MET",
+          "ca_coord": [
+            43.23347005521769,
+            43.24902906645395,
+            14.968081587146251
+          ],
+          "sasa": 17.35624454229315,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 54,
+          "res_name": "ASP",
+          "ca_coord": [
+            45.56558908173096,
+            44.212658258324176,
+            12.111351003638195
+          ],
+          "sasa": 21.131743924272964,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 55,
+          "res_name": "ALA",
+          "ca_coord": [
+            46.93275833962878,
+            40.649721716035046,
+            11.988418437245404
+          ],
+          "sasa": 33.23030580916862,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 56,
+          "res_name": "GLY",
+          "ca_coord": [
+            43.343550955001234,
+            39.43085098172808,
+            11.828892629975634
+          ],
+          "sasa": 18.390129535003183,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 57,
+          "res_name": "LYS",
+          "ca_coord": [
+            43.84695965084059,
+            37.76128415975797,
+            15.202941875604681
+          ],
+          "sasa": 64.1799409846761,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 58,
+          "res_name": "LEU",
+          "ca_coord": [
+            41.20664846717772,
+            37.61632680953641,
+            17.871279226848248
+          ],
+          "sasa": 89.3475521839302,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 59,
+          "res_name": "VAL",
+          "ca_coord": [
+            41.58212351311803,
+            39.65301119518989,
+            21.051524532341432
+          ],
+          "sasa": 23.61181697955812,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 60,
+          "res_name": "THR",
+          "ca_coord": [
+            42.05421452299939,
+            37.510484472082986,
+            24.111283888755263
+          ],
+          "sasa": 49.662629585123796,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 61,
+          "res_name": "ASP",
+          "ca_coord": [
+            39.842982892890106,
+            37.832958309137524,
+            27.206901969594625
+          ],
+          "sasa": 25.050919362461737,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 62,
+          "res_name": "GLU",
+          "ca_coord": [
+            42.93753631792033,
+            38.9370852534424,
+            29.00015398492701
+          ],
+          "sasa": 107.91045794325672,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 63,
+          "res_name": "LEU",
+          "ca_coord": [
+            43.490186774849,
+            41.945784382994994,
+            26.766707092725184
+          ],
+          "sasa": 15.541188659583705,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 64,
+          "res_name": "VAL",
+          "ca_coord": [
+            39.78346849967837,
+            42.69976137366775,
+            26.7984769849526
+          ],
+          "sasa": 13.18708515570366,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 65,
+          "res_name": "ILE",
+          "ca_coord": [
+            39.575056702159216,
+            42.81439047930944,
+            30.609741826287376
+          ],
+          "sasa": 4.2635478714183055,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 66,
+          "res_name": "ALA",
+          "ca_coord": [
+            42.65378139447023,
+            45.0470622635661,
+            30.563406389108003
+          ],
+          "sasa": 10.92060421514244,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 67,
+          "res_name": "LEU",
+          "ca_coord": [
+            40.94947105108664,
+            47.53554129276057,
+            28.211266645237536
+          ],
+          "sasa": 0.007949073884541314,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 68,
+          "res_name": "VAL",
+          "ca_coord": [
+            37.84824214891932,
+            47.55217388704095,
+            30.421521529446494
+          ],
+          "sasa": 0.0071938036528285424,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 69,
+          "res_name": "LYS",
+          "ca_coord": [
+            39.92734638440032,
+            48.27662297999982,
+            33.521019567793346
+          ],
+          "sasa": 74.74461067283,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 70,
+          "res_name": "GLU",
+          "ca_coord": [
+            41.79186171510574,
+            51.01593590011912,
+            31.654760125156294
+          ],
+          "sasa": 56.82280574034149,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 71,
+          "res_name": "ARG",
+          "ca_coord": [
+            38.566942364691045,
+            52.41536806112697,
+            30.194190438336197
+          ],
+          "sasa": 20.529975963521515,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 72,
+          "res_name": "ILE",
+          "ca_coord": [
+            36.435361014536106,
+            52.54125540345213,
+            33.3133793272485
+          ],
+          "sasa": 8.438719788275826,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 73,
+          "res_name": "ALA",
+          "ca_coord": [
+            39.33285012175167,
+            54.37151445200634,
+            34.91822003235062
+          ],
+          "sasa": 68.392654183194,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 74,
+          "res_name": "GLN",
+          "ca_coord": [
+            38.514277504004134,
+            57.351512703602786,
+            32.68002560604265
+          ],
+          "sasa": 60.44173244247763,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 75,
+          "res_name": "GLU",
+          "ca_coord": [
+            36.806352821233375,
+            60.195062770120686,
+            34.54106571769755
+          ],
+          "sasa": 122.7165346738417,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 76,
+          "res_name": "ASP",
+          "ca_coord": [
+            33.629815953462256,
+            59.977349321175765,
+            32.464875846361274
+          ],
+          "sasa": 69.43893355095935,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 77,
+          "res_name": "CYS",
+          "ca_coord": [
+            32.94741203463467,
+            56.670402553516155,
+            34.28545788720272
+          ],
+          "sasa": 7.1332389190577885,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 78,
+          "res_name": "ARG",
+          "ca_coord": [
+            33.14864156085384,
+            58.453127461036786,
+            37.62143399351451
+          ],
+          "sasa": 154.46343259233836,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 79,
+          "res_name": "ASN",
+          "ca_coord": [
+            29.3885597314196,
+            57.85723862783541,
+            38.098629063087074
+          ],
+          "sasa": 57.7508389681027,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 80,
+          "res_name": "GLY",
+          "ca_coord": [
+            29.4196645912277,
+            54.27208532493706,
+            36.923776186164446
+          ],
+          "sasa": 5.278629002677562,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 81,
+          "res_name": "PHE",
+          "ca_coord": [
+            28.87308811140617,
+            52.85910741641979,
+            33.47988048772234
+          ],
+          "sasa": 0.21732278279519454,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 82,
+          "res_name": "LEU",
+          "ca_coord": [
+            26.62370258099312,
+            50.81547874499407,
+            31.184642681111633
+          ],
+          "sasa": 0.22647123699398203,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 83,
+          "res_name": "LEU",
+          "ca_coord": [
+            28.475298141695383,
+            47.83089692363941,
+            29.814575810033087
+          ],
+          "sasa": 0.022425041206938626,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 84,
+          "res_name": "ASP",
+          "ca_coord": [
+            26.494983920248135,
+            46.67092204789673,
+            26.812565338369215
+          ],
+          "sasa": 15.949390537706588,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 85,
+          "res_name": "GLY",
+          "ca_coord": [
+            26.775060872848915,
+            42.940908460541735,
+            25.973115793268995
+          ],
+          "sasa": 2.4951135064622325,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 86,
+          "res_name": "PHE",
+          "ca_coord": [
+            29.926809344134327,
+            42.096485985337495,
+            27.94412575192471
+          ],
+          "sasa": 0.16136807197466516,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 87,
+          "res_name": "PRO",
+          "ca_coord": [
+            30.780301184665547,
+            39.74556197971955,
+            29.58116026529207
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 88,
+          "res_name": "ARG",
+          "ca_coord": [
+            29.789531971213783,
+            37.02585000647066,
+            27.11350628868943
+          ],
+          "sasa": 12.158973418984848,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 89,
+          "res_name": "THR",
+          "ca_coord": [
+            31.02410487587751,
+            34.00977264022014,
+            29.128492160565834
+          ],
+          "sasa": 18.956638362991836,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 90,
+          "res_name": "ILE",
+          "ca_coord": [
+            31.606929526240243,
+            32.85870158212458,
+            32.771465650195466
+          ],
+          "sasa": 58.86668191281315,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 91,
+          "res_name": "PRO",
+          "ca_coord": [
+            35.371250101476555,
+            32.98728317487604,
+            32.157749607665984
+          ],
+          "sasa": 79.25795966603758,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 92,
+          "res_name": "GLN",
+          "ca_coord": [
+            34.99860567444431,
+            36.665154114426414,
+            31.19630565037432
+          ],
+          "sasa": 3.137300114114374,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 93,
+          "res_name": "ALA",
+          "ca_coord": [
+            32.634144160672,
+            37.41663050288642,
+            34.07678095620088
+          ],
+          "sasa": -3.645766007880427e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 94,
+          "res_name": "ASP",
+          "ca_coord": [
+            34.83065442131085,
+            35.7127952342914,
+            36.616207673473895
+          ],
+          "sasa": 54.06188467950088,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 95,
+          "res_name": "ALA",
+          "ca_coord": [
+            37.87861127229887,
+            37.7153251610788,
+            35.46926873576359
+          ],
+          "sasa": 23.684162888826457,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 96,
+          "res_name": "MET",
+          "ca_coord": [
+            36.031556160372105,
+            40.97777155928461,
+            35.90202260615548
+          ],
+          "sasa": -7.303804167913854e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 97,
+          "res_name": "LYS",
+          "ca_coord": [
+            35.3513489495973,
+            39.97694267778133,
+            39.46903027370525
+          ],
+          "sasa": 58.24619112244885,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 98,
+          "res_name": "GLU",
+          "ca_coord": [
+            38.99397943639476,
+            39.03684195242701,
+            40.04043010118334
+          ],
+          "sasa": 119.32960776551255,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 99,
+          "res_name": "ALA",
+          "ca_coord": [
+            40.193157532657814,
+            42.38315664191273,
+            38.71219409339892
+          ],
+          "sasa": 36.49422067729534,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 100,
+          "res_name": "GLY",
+          "ca_coord": [
+            37.913339203491155,
+            44.08406039281623,
+            41.28596560931834
+          ],
+          "sasa": 51.191366167645356,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 101,
+          "res_name": "ILE",
+          "ca_coord": [
+            35.33095272679216,
+            45.25922774178457,
+            38.7576193539805
+          ],
+          "sasa": 2.9196421407102187,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 102,
+          "res_name": "ASN",
+          "ca_coord": [
+            32.03297429380961,
+            44.842994086397425,
+            40.57949113863084
+          ],
+          "sasa": 48.05803430113143,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 103,
+          "res_name": "VAL",
+          "ca_coord": [
+            28.6213675412701,
+            45.709646058404175,
+            39.07307296115036
+          ],
+          "sasa": 1.135138910409527,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 104,
+          "res_name": "ASP",
+          "ca_coord": [
+            25.491994453630056,
+            46.75463447411156,
+            40.819769640425726
+          ],
+          "sasa": 30.55166877973033,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 105,
+          "res_name": "TYR",
+          "ca_coord": [
+            23.106843777866786,
+            45.374854061407746,
+            38.21305901846844
+          ],
+          "sasa": 20.454976600654277,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 106,
+          "res_name": "VAL",
+          "ca_coord": [
+            22.8763590827309,
+            42.76669530299033,
+            35.56123574075957
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 107,
+          "res_name": "LEU",
+          "ca_coord": [
+            19.77349141040145,
+            43.237845533614816,
+            33.509080856693714
+          ],
+          "sasa": 1.2734503342698906,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 108,
+          "res_name": "GLU",
+          "ca_coord": [
+            18.61853024352762,
+            40.677280113239334,
+            31.003965204475083
+          ],
+          "sasa": 13.73563231182246,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 109,
+          "res_name": "PHE",
+          "ca_coord": [
+            16.420541674418534,
+            42.179978191986706,
+            28.348458146643235
+          ],
+          "sasa": 2.5495023327121245,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 110,
+          "res_name": "ASP",
+          "ca_coord": [
+            14.069379186434343,
+            39.33196639105954,
+            27.499742801621373
+          ],
+          "sasa": 34.91966097728688,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 111,
+          "res_name": "VAL",
+          "ca_coord": [
+            12.294240726126581,
+            38.90018278879136,
+            24.116594065968666
+          ],
+          "sasa": -8.190361705366113e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 112,
+          "res_name": "PRO",
+          "ca_coord": [
+            11.134161939393447,
+            35.39575260711545,
+            22.95494338253122
+          ],
+          "sasa": 46.730839668466025,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 113,
+          "res_name": "ASP",
+          "ca_coord": [
+            13.080458601858503,
+            33.91878233108127,
+            20.088708028379557
+          ],
+          "sasa": 18.114153137245705,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 114,
+          "res_name": "GLU",
+          "ca_coord": [
+            10.000086268877926,
+            33.57893862777347,
+            17.927256306149843
+          ],
+          "sasa": 64.38199422538345,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 115,
+          "res_name": "LEU",
+          "ca_coord": [
+            9.15714565918837,
+            37.208825799402675,
+            18.37120590889538
+          ],
+          "sasa": 65.4486435055141,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 116,
+          "res_name": "ILE",
+          "ca_coord": [
+            12.715253822441905,
+            38.200312973135226,
+            17.481150583136156
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 117,
+          "res_name": "VAL",
+          "ca_coord": [
+            12.642131239420774,
+            35.82798814856475,
+            14.458777010167557
+          ],
+          "sasa": 0.5567770443570372,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 118,
+          "res_name": "ASP",
+          "ca_coord": [
+            9.393134370573978,
+            37.511247844375816,
+            13.329652950251305
+          ],
+          "sasa": 52.99553085801804,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 119,
+          "res_name": "ARG",
+          "ca_coord": [
+            10.820970118077774,
+            40.9739312008352,
+            13.910085591519376
+          ],
+          "sasa": 63.31659089580293,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 120,
+          "res_name": "ILE",
+          "ca_coord": [
+            13.65050974074811,
+            40.17642674178261,
+            11.557929099801648
+          ],
+          "sasa": 5.982832243446419,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 121,
+          "res_name": "VAL",
+          "ca_coord": [
+            13.048703232937008,
+            37.594091121742736,
+            8.858689823148046
+          ],
+          "sasa": 16.485825523787017,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 122,
+          "res_name": "GLY",
+          "ca_coord": [
+            10.045506730256971,
+            39.58000453653429,
+            7.661412213217353
+          ],
+          "sasa": 5.1730313040485925,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 123,
+          "res_name": "ARG",
+          "ca_coord": [
+            11.965103311866443,
+            42.67071714638728,
+            6.604170269682701
+          ],
+          "sasa": 52.33741554107773,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 124,
+          "res_name": "ARG",
+          "ca_coord": [
+            12.595870102648572,
+            43.979345044266765,
+            3.1009310142880686
+          ],
+          "sasa": 80.03244441441839,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 125,
+          "res_name": "VAL",
+          "ca_coord": [
+            15.174600668671268,
+            46.6956821711902,
+            2.416761970295589
+          ],
+          "sasa": 10.624123963565314,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 126,
+          "res_name": "HIS",
+          "ca_coord": [
+            15.895678234432754,
+            49.093906636809876,
+            -0.4193091777292146
+          ],
+          "sasa": 1.8232854386534973,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 127,
+          "res_name": "ALA",
+          "ca_coord": [
+            19.549224718175527,
+            48.23458574542741,
+            -1.024671628467999
+          ],
+          "sasa": 68.71329655789893,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 128,
+          "res_name": "PRO",
+          "ca_coord": [
+            20.831862971663874,
+            51.563333761450906,
+            -2.5541309304790083
+          ],
+          "sasa": 101.33531453785201,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 129,
+          "res_name": "SER",
+          "ca_coord": [
+            19.433016749316323,
+            53.87387312925498,
+            0.18596725682223436
+          ],
+          "sasa": 56.178099730205275,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 130,
+          "res_name": "GLY",
+          "ca_coord": [
+            19.257310692015096,
+            51.634071338182785,
+            3.219221502370642
+          ],
+          "sasa": 49.773319744739396,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 131,
+          "res_name": "ARG",
+          "ca_coord": [
+            15.507115961739672,
+            52.141219903690605,
+            3.693139024222056
+          ],
+          "sasa": 82.76896313870296,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 132,
+          "res_name": "VAL",
+          "ca_coord": [
+            13.925001293200161,
+            49.29953186878784,
+            5.6889291654650105
+          ],
+          "sasa": 70.8548544975694,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 133,
+          "res_name": "TYR",
+          "ca_coord": [
+            10.412652791567165,
+            47.87542962551682,
+            5.708159448533914
+          ],
+          "sasa": 18.91006120102557,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 134,
+          "res_name": "HIS",
+          "ca_coord": [
+            8.654223668075769,
+            45.06956276768117,
+            7.5199276990993
+          ],
+          "sasa": 8.649031297431106,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 135,
+          "res_name": "VAL",
+          "ca_coord": [
+            5.8809197089942415,
+            43.19279313685026,
+            5.666400816819586
+          ],
+          "sasa": 35.89290872073558,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 136,
+          "res_name": "LYS",
+          "ca_coord": [
+            3.799084348362271,
+            43.49025379977852,
+            8.830633375471464
+          ],
+          "sasa": 142.07722326901705,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 137,
+          "res_name": "PHE",
+          "ca_coord": [
+            5.192588176505652,
+            46.41373661201452,
+            10.862819471160162
+          ],
+          "sasa": 114.17434837161012,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 138,
+          "res_name": "ASN",
+          "ca_coord": [
+            6.002687563805182,
+            49.004529045054966,
+            8.171319043592431
+          ],
+          "sasa": 53.26288199583698,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 139,
+          "res_name": "PRO",
+          "ca_coord": [
+            5.032136134558407,
+            47.66184973570948,
+            4.736607527985543
+          ],
+          "sasa": 66.15925460895849,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 140,
+          "res_name": "PRO",
+          "ca_coord": [
+            5.854897675202913,
+            49.7547175504339,
+            1.709403742752885
+          ],
+          "sasa": 5.421087319284782,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 141,
+          "res_name": "LYS",
+          "ca_coord": [
+            2.9414125853378508,
+            51.61054163837621,
+            0.062275458208215895
+          ],
+          "sasa": 180.1053372601995,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 142,
+          "res_name": "VAL",
+          "ca_coord": [
+            3.4636022856184283,
+            49.534451148236954,
+            -3.053014768026607
+          ],
+          "sasa": 91.82135620845386,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 143,
+          "res_name": "GLU",
+          "ca_coord": [
+            4.241146631476063,
+            46.25218161713998,
+            -1.3280627352276433
+          ],
+          "sasa": 100.48770957117101,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 144,
+          "res_name": "GLY",
+          "ca_coord": [
+            7.561966881195893,
+            44.83652730018163,
+            -2.552873628356835
+          ],
+          "sasa": 25.116528723749898,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 145,
+          "res_name": "LYS",
+          "ca_coord": [
+            8.465611488000715,
+            48.25406083649969,
+            -3.968039679650456
+          ],
+          "sasa": 79.78761474936482,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 146,
+          "res_name": "ASP",
+          "ca_coord": [
+            10.491783422169572,
+            51.079249004907425,
+            -2.4226248142258413
+          ],
+          "sasa": 1.0329404221812808,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 147,
+          "res_name": "ASP",
+          "ca_coord": [
+            8.243876699727597,
+            54.09713494012004,
+            -1.8356692373326418
+          ],
+          "sasa": 50.30842347612024,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 148,
+          "res_name": "VAL",
+          "ca_coord": [
+            10.81499914546609,
+            56.72671776351586,
+            -2.810440771550475
+          ],
+          "sasa": 113.17541424907441,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 149,
+          "res_name": "THR",
+          "ca_coord": [
+            12.22013858136187,
+            55.23617263983655,
+            -6.031831837529012
+          ],
+          "sasa": 72.0906942713975,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 150,
+          "res_name": "GLY",
+          "ca_coord": [
+            9.615329066138663,
+            52.70747329302706,
+            -7.120438287467589
+          ],
+          "sasa": 56.477147723374316,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 151,
+          "res_name": "GLU",
+          "ca_coord": [
+            12.540379010181603,
+            50.30226551131572,
+            -7.02215628682864
+          ],
+          "sasa": 79.8907671504987,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 152,
+          "res_name": "GLU",
+          "ca_coord": [
+            12.28673203657656,
+            46.701456358699716,
+            -5.82217184558872
+          ],
+          "sasa": 112.19955728865827,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 153,
+          "res_name": "LEU",
+          "ca_coord": [
+            13.196056519949597,
+            45.82904119475722,
+            -2.263404957232371
+          ],
+          "sasa": 18.9691871771617,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 154,
+          "res_name": "THR",
+          "ca_coord": [
+            15.318116087558991,
+            42.933963262845886,
+            -1.010705488214601
+          ],
+          "sasa": 69.6979730798795,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 155,
+          "res_name": "THR",
+          "ca_coord": [
+            16.067024867951044,
+            40.88224732025162,
+            2.0797511656726915
+          ],
+          "sasa": 64.06504857535342,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 156,
+          "res_name": "ARG",
+          "ca_coord": [
+            19.391024181191757,
+            41.14440464121784,
+            3.843887244505364
+          ],
+          "sasa": 64.95619789636358,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 157,
+          "res_name": "LYS",
+          "ca_coord": [
+            21.4144947540363,
+            37.896430253310754,
+            4.154190670738098
+          ],
+          "sasa": 138.89106203965395,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 158,
+          "res_name": "ASP",
+          "ca_coord": [
+            21.412444036894147,
+            38.35103486607262,
+            7.92213393472375
+          ],
+          "sasa": 28.054577065910305,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 159,
+          "res_name": "ASP",
+          "ca_coord": [
+            17.624454698703843,
+            38.617186965630296,
+            7.937844875421964
+          ],
+          "sasa": -6.028131383547641e-14,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 160,
+          "res_name": "GLN",
+          "ca_coord": [
+            17.432074353847575,
+            35.066085546964324,
+            6.564941922820612
+          ],
+          "sasa": 86.97098721953176,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 161,
+          "res_name": "GLU",
+          "ca_coord": [
+            15.462692638296758,
+            32.79573335362356,
+            8.86945457773204
+          ],
+          "sasa": 73.68879981002297,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 162,
+          "res_name": "GLU",
+          "ca_coord": [
+            18.144158301890208,
+            30.07138523278521,
+            8.866419540022033
+          ],
+          "sasa": 91.48285203987908,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 163,
+          "res_name": "THR",
+          "ca_coord": [
+            20.838741512253886,
+            32.586485427844174,
+            9.779049438305307
+          ],
+          "sasa": 19.424602877429614,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 164,
+          "res_name": "VAL",
+          "ca_coord": [
+            18.662035138389253,
+            34.230176546516624,
+            12.466260979731546
+          ],
+          "sasa": 1.876939028880006,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 165,
+          "res_name": "ARG",
+          "ca_coord": [
+            17.644660493681656,
+            31.010900163984967,
+            14.200139408336035
+          ],
+          "sasa": 82.33871376439419,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 166,
+          "res_name": "LYS",
+          "ca_coord": [
+            21.28313582015226,
+            29.885802327712014,
+            14.208980080174104
+          ],
+          "sasa": 113.74539456674043,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 167,
+          "res_name": "ARG",
+          "ca_coord": [
+            22.507665943274212,
+            33.11375289939175,
+            15.795914257876321
+          ],
+          "sasa": 37.53704426363251,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 168,
+          "res_name": "LEU",
+          "ca_coord": [
+            19.971287661874406,
+            32.720121527236216,
+            18.578620235247683
+          ],
+          "sasa": 3.8870918658323412,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 169,
+          "res_name": "VAL",
+          "ca_coord": [
+            20.82050304701586,
+            29.10702510589999,
+            19.4340765344041
+          ],
+          "sasa": 82.77211401337996,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 170,
+          "res_name": "GLU",
+          "ca_coord": [
+            24.4803886933676,
+            30.047579388271803,
+            19.408509024933704
+          ],
+          "sasa": 69.8634628501955,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 171,
+          "res_name": "TYR",
+          "ca_coord": [
+            23.639993976737607,
+            32.929013833724284,
+            21.76297950825269
+          ],
+          "sasa": 0.6070562089456216,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 172,
+          "res_name": "HIS",
+          "ca_coord": [
+            21.675715246634642,
+            30.748824553663596,
+            24.14667302327797
+          ],
+          "sasa": 54.369764903487535,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 173,
+          "res_name": "GLN",
+          "ca_coord": [
+            24.10898655135416,
+            27.863857932457588,
+            24.546947119561725
+          ],
+          "sasa": 102.9751501933687,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 174,
+          "res_name": "MET",
+          "ca_coord": [
+            26.744287169909704,
+            30.526465158720242,
+            25.3374244490878
+          ],
+          "sasa": 28.30483486740938,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 175,
+          "res_name": "THR",
+          "ca_coord": [
+            24.724977641625802,
+            32.78048612149294,
+            27.659985864500335
+          ],
+          "sasa": -6.289082583432314e-14,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 176,
+          "res_name": "ALA",
+          "ca_coord": [
+            22.67965936884532,
+            30.241755377383306,
+            29.578120993197686
+          ],
+          "sasa": 56.43492347421766,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 177,
+          "res_name": "PRO",
+          "ca_coord": [
+            25.418602965050518,
+            29.50602296705897,
+            32.19832476336612
+          ],
+          "sasa": 52.23737362547218,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 178,
+          "res_name": "LEU",
+          "ca_coord": [
+            26.36254207159889,
+            33.212788343533475,
+            32.46488321267602
+          ],
+          "sasa": -1.0462659554108956e-13,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 179,
+          "res_name": "ILE",
+          "ca_coord": [
+            22.818078998664888,
+            34.095045635710676,
+            33.43949318338604
+          ],
+          "sasa": 24.5480877909486,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 180,
+          "res_name": "GLY",
+          "ca_coord": [
+            23.04051746309569,
+            31.250719929631526,
+            35.94308548391722
+          ],
+          "sasa": 37.92892038650885,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 181,
+          "res_name": "TYR",
+          "ca_coord": [
+            26.363331256610856,
+            32.569314842205635,
+            37.14291295074695
+          ],
+          "sasa": 31.909952263547282,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 182,
+          "res_name": "TYR",
+          "ca_coord": [
+            24.88314172179677,
+            36.02635264108344,
+            37.71626851072429
+          ],
+          "sasa": 0.0004103919138883954,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 183,
+          "res_name": "SER",
+          "ca_coord": [
+            21.865129479523294,
+            34.641635904094244,
+            39.604956855525884
+          ],
+          "sasa": 32.677078258307105,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 184,
+          "res_name": "LYS",
+          "ca_coord": [
+            24.122133192429626,
+            32.73064732027807,
+            42.00167041213862
+          ],
+          "sasa": 162.52521995460475,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 185,
+          "res_name": "GLU",
+          "ca_coord": [
+            26.064810041358058,
+            35.93995091232403,
+            42.46461545716919
+          ],
+          "sasa": 15.78702706378657,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 186,
+          "res_name": "ALA",
+          "ca_coord": [
+            22.82875027453091,
+            37.86223421721681,
+            43.02208481171087
+          ],
+          "sasa": 28.779848043840893,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 187,
+          "res_name": "GLU",
+          "ca_coord": [
+            21.75494802600931,
+            35.312343542447174,
+            45.67114884978032
+          ],
+          "sasa": 153.93446641648586,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 188,
+          "res_name": "ALA",
+          "ca_coord": [
+            25.216538517082405,
+            35.638944529787345,
+            47.19246672162065
+          ],
+          "sasa": 58.46148426006332,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 189,
+          "res_name": "GLY",
+          "ca_coord": [
+            24.50982297942444,
+            39.36127406204763,
+            47.51506089716598
+          ],
+          "sasa": 46.497612607067126,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 190,
+          "res_name": "ASN",
+          "ca_coord": [
+            27.37919931273711,
+            40.35976734354179,
+            45.207616287942145
+          ],
+          "sasa": 60.3391251257181,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 191,
+          "res_name": "THR",
+          "ca_coord": [
+            25.16957955725083,
+            42.06389736155943,
+            42.607017238135356
+          ],
+          "sasa": 7.41160930814406,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 192,
+          "res_name": "LYS",
+          "ca_coord": [
+            21.501482807681963,
+            42.38036045440109,
+            41.662344624648874
+          ],
+          "sasa": 100.7947151316249,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 193,
+          "res_name": "TYR",
+          "ca_coord": [
+            20.126283274342285,
+            40.48711672577523,
+            38.69324317344833
+          ],
+          "sasa": 39.12294422192424,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 194,
+          "res_name": "ALA",
+          "ca_coord": [
+            16.800407772652928,
+            41.27924108840268,
+            37.01501758033082
+          ],
+          "sasa": 13.577164501183864,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 195,
+          "res_name": "LYS",
+          "ca_coord": [
+            14.901534475363587,
+            40.002039641314255,
+            33.983693172683765
+          ],
+          "sasa": 89.89548735521377,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 196,
+          "res_name": "VAL",
+          "ca_coord": [
+            13.092807631558813,
+            42.584536649986035,
+            31.853967038951694
+          ],
+          "sasa": 5.618556885026894,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 197,
+          "res_name": "ASP",
+          "ca_coord": [
+            10.174491431458165,
+            41.75897595327095,
+            29.585806310019677
+          ],
+          "sasa": 51.162608314211056,
+          "ss_type": "E",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 198,
+          "res_name": "GLY",
+          "ca_coord": [
+            11.257230378736491,
+            43.43122217537119,
+            26.38929149780339
+          ],
+          "sasa": 0.573319688545681,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 199,
+          "res_name": "THR",
+          "ca_coord": [
+            7.892318678457727,
+            42.62868745347211,
+            24.83964887142999
+          ],
+          "sasa": 53.034717962254724,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 200,
+          "res_name": "LYS",
+          "ca_coord": [
+            6.208541189463244,
+            45.53424121121301,
+            26.679678145227886
+          ],
+          "sasa": 61.46712000516423,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 201,
+          "res_name": "PRO",
+          "ca_coord": [
+            5.652640568592659,
+            49.09595994670668,
+            25.48754428154097
+          ],
+          "sasa": 82.5551919417419,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 202,
+          "res_name": "VAL",
+          "ca_coord": [
+            8.868285986605038,
+            51.11194452891523,
+            25.65590018406111
+          ],
+          "sasa": 78.74208110890461,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 203,
+          "res_name": "ALA",
+          "ca_coord": [
+            7.055839895240037,
+            53.32418950519534,
+            28.156888854730994
+          ],
+          "sasa": 76.05588127357322,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 204,
+          "res_name": "GLU",
+          "ca_coord": [
+            6.2055295198502165,
+            50.34957326651546,
+            30.317021836305596
+          ],
+          "sasa": 48.735116024199115,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 205,
+          "res_name": "VAL",
+          "ca_coord": [
+            9.695991712928766,
+            48.86073357129494,
+            30.170778748862304
+          ],
+          "sasa": 0.1797684271812192,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 206,
+          "res_name": "ARG",
+          "ca_coord": [
+            11.104854890177439,
+            52.26461867701273,
+            31.12702491741171
+          ],
+          "sasa": 85.96819157220843,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 207,
+          "res_name": "ALA",
+          "ca_coord": [
+            8.648230249942813,
+            52.322009924213475,
+            34.0388972741157
+          ],
+          "sasa": 27.2092408835965,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 208,
+          "res_name": "ASP",
+          "ca_coord": [
+            9.849470416991029,
+            48.88697803424595,
+            35.099489078711656
+          ],
+          "sasa": 28.95233150925034,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 209,
+          "res_name": "LEU",
+          "ca_coord": [
+            13.49290924112659,
+            49.94909233063954,
+            34.91728930873911
+          ],
+          "sasa": 2.218174995698499,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 210,
+          "res_name": "GLU",
+          "ca_coord": [
+            12.94325409478764,
+            52.77565135671291,
+            37.350151058248564
+          ],
+          "sasa": 45.9323333830067,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 211,
+          "res_name": "LYS",
+          "ca_coord": [
+            11.315638765018395,
+            50.38033437421758,
+            39.81888471979847
+          ],
+          "sasa": 134.36890498447977,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 212,
+          "res_name": "ILE",
+          "ca_coord": [
+            14.382594010530138,
+            48.1138909692882,
+            39.552665234636116
+          ],
+          "sasa": 55.129387950588495,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 213,
+          "res_name": "LEU",
+          "ca_coord": [
+            17.16864897798405,
+            50.71221389469595,
+            39.67146209328945
+          ],
+          "sasa": 11.685752657374957,
+          "ss_type": "H",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        },
+        {
+          "chain_id": "A",
+          "res_num": 214,
+          "res_name": "GLY",
+          "ca_coord": [
+            15.95485578351262,
+            53.7213596080555,
+            41.62028690758771
+          ],
+          "sasa": 83.3060362207654,
+          "ss_type": "C",
+          "altloc_ids": [],
+          "max_occupancy": 1.0
+        }
+      ]
+    }
+  ],
+  "chimerax_version": "1.11.1",
+  "schema_version": "1.0"
+}

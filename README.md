@@ -47,6 +47,22 @@ ln -s /path/to/compare-structures-skill ~/.claude/skills/compare-structures
 ./analyze.py --in1 1AKE --in2 4AKE --out runs/ake
 ```
 
+## Example output
+
+A reference run of the canonical adenylate kinase open/closed pair is
+committed under [`examples/1ake_vs_4ake/`](examples/1ake_vs_4ake/). It
+includes the four artifacts of a real analysis:
+
+- [`report.md`](examples/1ake_vs_4ake/report.md) — Japanese analytical report
+- [`facts.json`](examples/1ake_vs_4ake/facts.json) — computed fact sheet
+- `aligned.cif` — matchmaker-superposed structures (two models)
+- `raw.json` — raw ChimeraX extraction
+
+The report identifies two moved regions (A/32-70 and A/117-166) with
+overall Cα RMSD ≈ 8.24 Å, corresponding to the NMP-binding and LID domain
+motions of *E. coli* adenylate kinase — without naming those domains, per
+the skill's strict no-background-knowledge rule.
+
 ## Running tests
 
 Unit and contract tests (no ChimeraX needed):

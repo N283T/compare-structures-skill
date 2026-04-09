@@ -1,0 +1,520 @@
+{
+  "inputs": {
+    "structure_1": {
+      "id": "1AKE",
+      "source": "pdb_id",
+      "model_id": 1
+    },
+    "structure_2": {
+      "id": "4AKE",
+      "source": "pdb_id",
+      "model_id": 2
+    }
+  },
+  "alignment": {
+    "method": "matchmaker",
+    "reference": "1AKE",
+    "moved": "4AKE",
+    "overall_rmsd_angstrom": 8.24,
+    "n_aligned_residues": 214,
+    "sequence_identity": 1.0,
+    "refined_rmsd_angstrom": 1.083
+  },
+  "chain_summary": [
+    {
+      "chain_id": "A",
+      "n_residues": 214,
+      "ca_displacement_stats": {
+        "mean": 5.307,
+        "median": 1.727,
+        "max": 24.712,
+        "p95": 19.385
+      },
+      "significant_change": true
+    }
+  ],
+  "moved_regions": [
+    {
+      "chain_id": "A",
+      "residue_range": [
+        32,
+        70
+      ],
+      "residue_range_label": "A/32-70",
+      "n_residues": 39,
+      "mean_ca_displacement": 9.046,
+      "max_ca_displacement": 18.016,
+      "estimated_rotation_deg": 42.02,
+      "estimated_translation_angstrom": 42.798,
+      "hinge_candidate_residues": [
+        31,
+        71
+      ]
+    },
+    {
+      "chain_id": "A",
+      "residue_range": [
+        117,
+        166
+      ],
+      "residue_range_label": "A/117-166",
+      "n_residues": 50,
+      "mean_ca_displacement": 12.803,
+      "max_ca_displacement": 24.712,
+      "estimated_rotation_deg": 49.13,
+      "estimated_translation_angstrom": 36.12,
+      "hinge_candidate_residues": [
+        116,
+        167
+      ]
+    }
+  ],
+  "top_ca_movers": [
+    {
+      "chain_id": "A",
+      "res_num": 149,
+      "res_name": "THR",
+      "displacement": 24.712
+    },
+    {
+      "chain_id": "A",
+      "res_num": 150,
+      "res_name": "GLY",
+      "displacement": 24.328
+    },
+    {
+      "chain_id": "A",
+      "res_num": 148,
+      "res_name": "VAL",
+      "displacement": 23.379
+    },
+    {
+      "chain_id": "A",
+      "res_num": 151,
+      "res_name": "GLU",
+      "displacement": 22.869
+    },
+    {
+      "chain_id": "A",
+      "res_num": 147,
+      "res_name": "ASP",
+      "displacement": 21.523
+    },
+    {
+      "chain_id": "A",
+      "res_num": 145,
+      "res_name": "LYS",
+      "displacement": 20.652
+    },
+    {
+      "chain_id": "A",
+      "res_num": 152,
+      "res_name": "GLU",
+      "displacement": 20.578
+    },
+    {
+      "chain_id": "A",
+      "res_num": 142,
+      "res_name": "VAL",
+      "displacement": 20.545
+    },
+    {
+      "chain_id": "A",
+      "res_num": 146,
+      "res_name": "ASP",
+      "displacement": 20.27
+    },
+    {
+      "chain_id": "A",
+      "res_num": 128,
+      "res_name": "PRO",
+      "displacement": 20.13
+    }
+  ],
+  "sasa_changes": {
+    "total_delta_angstrom2": 3672.18,
+    "top_decreases": [
+      {
+        "chain_id": "A",
+        "res_num": 79,
+        "res_name": "ASN",
+        "delta_sasa": -38.27
+      },
+      {
+        "chain_id": "A",
+        "res_num": 102,
+        "res_name": "ASN",
+        "delta_sasa": -35.56
+      },
+      {
+        "chain_id": "A",
+        "res_num": 97,
+        "res_name": "LYS",
+        "delta_sasa": -33.97
+      }
+    ],
+    "top_increases": [
+      {
+        "chain_id": "A",
+        "res_num": 18,
+        "res_name": "GLN",
+        "delta_sasa": 110.38
+      },
+      {
+        "chain_id": "A",
+        "res_num": 173,
+        "res_name": "GLN",
+        "delta_sasa": 102.74
+      },
+      {
+        "chain_id": "A",
+        "res_num": 141,
+        "res_name": "LYS",
+        "delta_sasa": 94.71
+      },
+      {
+        "chain_id": "A",
+        "res_num": 58,
+        "res_name": "LEU",
+        "delta_sasa": 89.0
+      },
+      {
+        "chain_id": "A",
+        "res_num": 169,
+        "res_name": "VAL",
+        "delta_sasa": 79.63
+      },
+      {
+        "chain_id": "A",
+        "res_num": 202,
+        "res_name": "VAL",
+        "delta_sasa": 76.19
+      },
+      {
+        "chain_id": "A",
+        "res_num": 137,
+        "res_name": "PHE",
+        "delta_sasa": 72.98
+      },
+      {
+        "chain_id": "A",
+        "res_num": 40,
+        "res_name": "LYS",
+        "delta_sasa": 72.85
+      },
+      {
+        "chain_id": "A",
+        "res_num": 206,
+        "res_name": "ARG",
+        "delta_sasa": 72.75
+      },
+      {
+        "chain_id": "A",
+        "res_num": 132,
+        "res_name": "VAL",
+        "delta_sasa": 69.86
+      }
+    ]
+  },
+  "ss_changes": [
+    {
+      "chain_id": "A",
+      "res_num": 1,
+      "res_name": "MET",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 7,
+      "res_name": "GLY",
+      "ss_before": "C",
+      "ss_after": "E"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 12,
+      "res_name": "GLY",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 25,
+      "res_name": "GLY",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 30,
+      "res_name": "SER",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 41,
+      "res_name": "SER",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 42,
+      "res_name": "GLY",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 44,
+      "res_name": "GLU",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 45,
+      "res_name": "LEU",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 46,
+      "res_name": "GLY",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 47,
+      "res_name": "LYS",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 48,
+      "res_name": "GLN",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 55,
+      "res_name": "ALA",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 56,
+      "res_name": "GLY",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 60,
+      "res_name": "THR",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 75,
+      "res_name": "GLU",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 76,
+      "res_name": "ASP",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 77,
+      "res_name": "CYS",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 89,
+      "res_name": "THR",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 99,
+      "res_name": "ALA",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 104,
+      "res_name": "ASP",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 113,
+      "res_name": "ASP",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 114,
+      "res_name": "GLU",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 122,
+      "res_name": "GLY",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 135,
+      "res_name": "VAL",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 144,
+      "res_name": "GLY",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 145,
+      "res_name": "LYS",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 146,
+      "res_name": "ASP",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 151,
+      "res_name": "GLU",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 152,
+      "res_name": "GLU",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 153,
+      "res_name": "LEU",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 154,
+      "res_name": "THR",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 160,
+      "res_name": "GLN",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 176,
+      "res_name": "ALA",
+      "ss_before": "C",
+      "ss_after": "H"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 188,
+      "res_name": "ALA",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 198,
+      "res_name": "GLY",
+      "ss_before": "E",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 201,
+      "res_name": "PRO",
+      "ss_before": "H",
+      "ss_after": "C"
+    },
+    {
+      "chain_id": "A",
+      "res_num": 214,
+      "res_name": "GLY",
+      "ss_before": "H",
+      "ss_after": "C"
+    }
+  ],
+  "altloc_residues": {
+    "structure_1": [
+      {
+        "chain_id": "A",
+        "res_num": 167,
+        "res_name": "ARG",
+        "altloc_ids": [
+          "A"
+        ],
+        "max_occupancy": 1.0
+      }
+    ],
+    "structure_2": []
+  },
+  "drill_down_flags": {
+    "report_residue_level": true,
+    "report_sasa": true,
+    "report_ss_changes": true,
+    "reasons": {
+      "report_residue_level": "overall RMSD 8.24 \u00c5 > threshold 2.0 \u00c5",
+      "report_sasa": "|total \u0394SASA| 3672.2 \u00c5\u00b2 > threshold 100.0"
+    }
+  },
+  "warnings": [],
+  "condition": null,
+  "artifacts": {
+    "aligned_structure": "aligned.cif"
+  },
+  "meta": {
+    "schema_version": "1.0",
+    "chimerax_version": "1.11.1",
+    "generated_at": "2026-04-09T05:55:24.959900+00:00"
+  }
+}
