@@ -24,4 +24,4 @@ if str(_HERE) not in sys.path:
 from compare_structures.cli import main  # noqa: E402
 
 if __name__ == "__main__":
-    main(argv=sys.argv[1:], standalone_mode=True)
+    sys.exit(main(argv=sys.argv[1:], standalone_mode=True))

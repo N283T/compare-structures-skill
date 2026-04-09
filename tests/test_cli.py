@@ -143,3 +143,33 @@ class TestCliMain:
         err = json.loads((out / "error.json").read_text())
         assert err["stage"] == "chimerax_script"
         assert err["stderr_tail"] == "traceback..."
+
+    def test_post_processing_failure_writes_error_json(self, tmp_path, monkeypatch):
+        """Post-processing failure writes error.json with stage=analyze_post."""
+        monkeypatch.setenv("CHIMERAX_PATH", str(tmp_path / "chimerax"))
+        (tmp_path / "chimerax").write_text("")
+        # Feed the fake runner a payload that fails facts_builder (missing 'matchmaker' key).
+        bad_raw = {
+            "input1": {"id": "1TST", "source": "pdb_id", "model_id": 1},
+            "input2": {"id": "2TST", "source": "pdb_id", "model_id": 2},
+            # Deliberately omit 'matchmaker' and 'chains' so build_facts blows up.
+        }
+        out = tmp_path / "runs" / "out"
+        with patch(
+            "compare_structures.cli.run_chimerax_script",
+            side_effect=_fake_chimerax_runner_impl(bad_raw),
+        ):
+            exit_code = cli.main(
+                [
+                    "--in1",
+                    "1TST",
+                    "--in2",
+                    "2TST",
+                    "--out",
+                    str(out),
+                ],
+                standalone_mode=False,
+            )
+        assert exit_code == 5
+        err = json.loads((out / "error.json").read_text())
+        assert err["stage"] == "analyze_post"
