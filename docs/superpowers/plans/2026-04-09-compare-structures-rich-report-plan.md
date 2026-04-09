@@ -1283,8 +1283,19 @@ def test_run_derived_marker_used(report_text: str):
 
 
 def test_no_fake_citations(report_text: str):
-    """No author-year citation patterns allowed."""
-    pattern = re.compile(r"[A-Z][a-z]+\s*(?:&|and|et al\.?)\s*[A-Z]")
+    """No author-year citation patterns allowed.
+
+    Matches author-year constructs like 'Müller & Schulz 1992',
+    'Smith et al. (2020)', 'Jones and Brown, 1988'. Requires a
+    4-digit year (19xx or 20xx) near the author tokens so that
+    ordinary English prose like 'NMPbind and LID' or
+    'Caveats and Limitations' does not match.
+    """
+    pattern = re.compile(
+        r"[A-Z]\w+"
+        r"(?:\s+(?:&|and)\s+[A-Z]\w+|\s+et\s*al\.?)"
+        r"\s*,?\s*\(?(?:19|20)\d{2}\)?"
+    )
     matches = pattern.findall(report_text)
     assert matches == [], f"Fake citation patterns found: {matches}"
 
