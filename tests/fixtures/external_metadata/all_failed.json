@@ -1,0 +1,29 @@
+{
+  "fetched_at": "2026-04-09T06:00:00.000000+00:00",
+  "structures": {
+    "1AKE": {
+      "pdb_title": null,
+      "source": "togomcp:search_pdb_entity",
+      "fetch_ok": false,
+      "error": "togomcp server unreachable"
+    },
+    "4AKE": {
+      "pdb_title": null,
+      "source": "togomcp:search_pdb_entity",
+      "fetch_ok": false,
+      "error": "togomcp server unreachable"
+    }
+  },
+  "uniprot_mapping": {
+    "pairs": [],
+    "source": "togomcp:togoid_convertId",
+    "fetch_ok": false,
+    "error": "togomcp server unreachable"
+  },
+  "uniprot_entries": {},
+  "uniprot_sparql": {},
+  "warnings": [
+    "togomcp list_databases failed; all subsequent togomcp calls skipped",
+    "Structural context will be authored from training data only"
+  ]
+}

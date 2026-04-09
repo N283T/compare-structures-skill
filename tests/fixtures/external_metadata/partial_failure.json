@@ -1,0 +1,43 @@
+{
+  "fetched_at": "2026-04-09T06:00:00.000000+00:00",
+  "structures": {
+    "1AKE": {
+      "pdb_title": "STRUCTURE OF THE COMPLEX BETWEEN ADENYLATE KINASE FROM ESCHERICHIA COLI AND THE INHIBITOR AP5A REFINED AT 1.9 ANGSTROMS RESOLUTION: A MODEL FOR A CATALYTIC TRANSITION STATE",
+      "source": "togomcp:search_pdb_entity",
+      "fetch_ok": true,
+      "error": null
+    },
+    "4AKE": {
+      "pdb_title": null,
+      "source": "togomcp:search_pdb_entity",
+      "fetch_ok": false,
+      "error": "Empty result set"
+    }
+  },
+  "uniprot_mapping": {
+    "pairs": [["1AKE", "P69441"], ["4AKE", "P69441"]],
+    "source": "togomcp:togoid_convertId",
+    "fetch_ok": true,
+    "error": null
+  },
+  "uniprot_entries": {
+    "P69441": {
+      "protein_names": "Adenylate kinase (AK) (EC 2.7.4.3)",
+      "organism": "Escherichia coli (strain K12)",
+      "source": "togomcp:search_uniprot_entity",
+      "fetch_ok": true,
+      "error": null
+    }
+  },
+  "uniprot_sparql": {
+    "P69441": {
+      "function": null,
+      "keywords": [],
+      "domains": [],
+      "source": "togomcp:run_sparql",
+      "fetch_ok": false,
+      "error": "2 consecutive SPARQL failures; pivoted per togomcp usage guide"
+    }
+  },
+  "warnings": ["SPARQL path failed after pivot; uniprot_sparql omitted"]
+}

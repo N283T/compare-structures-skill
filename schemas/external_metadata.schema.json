@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "compare-structures external_metadata.json",
+  "type": "object",
+  "required": [
+    "fetched_at",
+    "structures",
+    "uniprot_mapping",
+    "uniprot_entries",
+    "uniprot_sparql",
+    "warnings"
+  ],
+  "properties": {
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp when the togomcp fetch began. The jsonschema library does not enforce 'format' without a FormatChecker; the annotation documents intent and enables stricter validators in the future."
+    },
+    "structures": {
+      "type": "object",
+      "description": "Per-PDB-ID structure metadata keyed by PDB ID.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["pdb_title", "source", "fetch_ok", "error"],
+        "properties": {
+          "pdb_title": {"type": ["string", "null"]},
+          "source": {"type": "string", "pattern": "^togomcp:"},
+          "fetch_ok": {"type": "boolean"},
+          "error": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "uniprot_mapping": {
+      "type": "object",
+      "required": ["pairs", "source", "fetch_ok", "error"],
+      "properties": {
+        "pairs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {"type": "string"},
+              {"type": ["string", "null"]}
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "source": {"type": "string", "pattern": "^togomcp:"},
+        "fetch_ok": {"type": "boolean"},
+        "error": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "uniprot_entries": {
+      "type": "object",
+      "description": "Per-UniProt-accession entry metadata keyed by accession.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["protein_names", "organism", "source", "fetch_ok", "error"],
+        "properties": {
+          "protein_names": {"type": ["string", "null"]},
+          "organism": {"type": ["string", "null"]},
+          "source": {"type": "string", "pattern": "^togomcp:"},
+          "fetch_ok": {"type": "boolean"},
+          "error": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "uniprot_sparql": {
+      "type": "object",
+      "description": "Per-UniProt-accession SPARQL-derived detail keyed by accession.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["function", "keywords", "domains", "source", "fetch_ok", "error"],
+        "properties": {
+          "function": {"type": ["string", "null"]},
+          "keywords": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "domains": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "range"],
+              "properties": {
+                "name": {"type": "string"},
+                "range": {"type": "string"}
+              },
+              "additionalProperties": false
+            }
+          },
+          "source": {"type": "string", "pattern": "^togomcp:"},
+          "fetch_ok": {"type": "boolean"},
+          "error": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "additionalProperties": false
+}
