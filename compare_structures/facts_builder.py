@@ -94,7 +94,7 @@ def build_facts(raw: dict, output_dir: Path) -> dict:
                     rot_deg = round(rotation_angle_deg(R), 2)
                     trans_mag = round(float(np.linalg.norm(t)), 3)
                 except ValueError:
-                    # Degenerate (collinear) point set — leave None.
+                    # Shape/dimension mismatch or fewer than 3 points — leave None.
                     pass
 
             region_dicts.append(
