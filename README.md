@@ -97,13 +97,4 @@ uv run --with pytest --with numpy --with jsonschema --with click pytest -v -m ch
 
 ## Documentation
 
-Current (rich-report redesign):
-
-- [Rich report design spec](docs/superpowers/specs/2026-04-09-compare-structures-rich-report-redesign.md)
-- [Rich report implementation plan](docs/superpowers/plans/2026-04-09-compare-structures-rich-report-plan.md)
 - [Manual review checklist](docs/manual_review_checklist.md)
-
-Historical (pre-rich-report pipeline design):
-
-- [Initial design spec](docs/superpowers/specs/2026-04-09-compare-structures-design.md)
-- [Initial implementation plan](docs/superpowers/plans/2026-04-09-compare-structures-implementation.md)
