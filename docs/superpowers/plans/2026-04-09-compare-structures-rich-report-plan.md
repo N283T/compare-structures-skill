@@ -204,8 +204,8 @@ import pytest
 from jsonschema import Draft202012Validator, ValidationError
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_SCHEMA_PATH = _REPO_ROOT / "schemas" / "external_metadata.schema.json"
-_FIXTURE_DIR = Path(__file__).parent / "fixtures" / "external_metadata"
+_SCHEMA_PATH = _REPO_ROOT.joinpath("schemas", "external_metadata.schema.json")
+_FIXTURE_DIR = Path(__file__).parent.joinpath("fixtures", "external_metadata")
 
 
 def _load_schema() -> dict:
@@ -436,7 +436,7 @@ from pathlib import Path
 import pytest
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PROMPT_PATH = _REPO_ROOT / "templates" / "report_prompt.md"
+_PROMPT_PATH = _REPO_ROOT.joinpath("templates", "report_prompt.md")
 
 
 @pytest.fixture(scope="module")
@@ -1215,7 +1215,7 @@ from pathlib import Path
 import pytest
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_REPORT_PATH = _REPO_ROOT / "examples" / "1ake_vs_4ake" / "report.md"
+_REPORT_PATH = _REPO_ROOT.joinpath("examples", "1ake_vs_4ake", "report.md")
 
 
 @pytest.fixture(scope="module")
