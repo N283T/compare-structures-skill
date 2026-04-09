@@ -50,11 +50,6 @@ git clone https://github.com/N283T/compare-structures-skill /path/to/compare-str
 ln -s /path/to/compare-structures-skill ~/.claude/skills/compare-structures
 ```
 
-If you manage your environment with Nix + Home Manager, you can instead
-deploy the skill declaratively from your dotfiles flake — see the
-[Home Manager manual](https://nix-community.github.io/home-manager/) for
-the `home.file` / `xdg.configFile` patterns.
-
 ## Requirements
 
 - [ChimeraX](https://www.cgl.ucsf.edu/chimerax/) 1.9 or newer
