@@ -49,8 +49,13 @@ in `facts.json`:
 
 ## 4. No fabricated citations
 
-- [ ] No author-year citations anywhere (regex
-      `[A-Z][a-z]+\s*(&|and|et al\.?)\s*[A-Z]` matches zero).
+- [ ] No author-year citations anywhere. The authoritative regex is defined
+      in `tests/test_example_report_snapshot.py::test_no_fake_citations`
+      and matches constructs like `Müller & Schulz 1992` or `Smith et al. (2020)`.
+      The regex **requires a 4-digit year (19xx or 20xx)** near the author
+      tokens so that ordinary English prose like `NMPbind and LID` or
+      `Caveats and Limitations` does not match. If you want to run it by
+      hand: `[A-Z]\w+(?:\s+(?:&|and)\s+[A-Z]\w+|\s+et\s*al\.?)\s*,?\s*\(?(?:19|20)\d{2}\)?`
 - [ ] No fake DOI or URL references.
 - [ ] No explicit journal names.
 
@@ -61,9 +66,9 @@ in `facts.json`:
 - [ ] Every entry with `fetch_ok: false` has a corresponding caveat
       either in Section 4 (graceful degradation note) or Section 9
       (Caveats).
-- [ ] If all `fetch_ok` fields are false, Section 4b opens with
-      `Structural context assembled from training data only; live DB
-      lookup unavailable.`.
+- [ ] If all `fetch_ok` fields are false, Section 4b consists only of
+      the literal sentence `Structural context assembled from training
+      data only; live DB lookup unavailable.` (no additional prose).
 
 ## 6. Condition variants
 

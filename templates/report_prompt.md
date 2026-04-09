@@ -56,11 +56,15 @@ context, but any interpretive claim must be explicitly marked.
 
 ## Report structure (Shape 2 — table-first)
 
-Write the sections in the listed order. Every section heading must
-appear exactly as shown below, as a level-2 markdown heading (`## …`).
-Never silently omit a section; if a section has no content under the
-current condition, render the heading and an explicit empty marker
-`_No entries for this run._`.
+Write the sections in the listed order. Sections 2 through 10 must
+appear as level-2 markdown headings (`## Section N: ...`) in the
+report. **Section 1 is an exception**: it is rendered as the H1 report
+title plus metadata shown in its "Render as" block below, not as a
+literal `## Section 1: Header` heading. Never silently omit a section;
+if a section has no content under the current condition, render the
+heading and an explicit empty marker `_No entries for this run._`
+(except for Section 3, which has its own condition-specific markers
+described in the Condition variants block).
 
 ## Section 1: Header
 
@@ -69,7 +73,7 @@ Render as:
 ```
 # <ID1> vs <ID2> — Conformational Comparison
 
-*Generated <meta.generated_at formatted as UTC>*
+*Generated <meta.generated_at formatted as "YYYY-MM-DD HH:MM UTC"; drop seconds, microseconds, and the numeric timezone offset>*
 
 **Headline:** <one sentence containing overall Cα RMSD in Å,
 n aligned residues, sequence identity as percent, number of moved
@@ -133,7 +137,11 @@ A markdown table with three columns (`Field`, `Structure 1`,
 - `PDB ID`
 - `PDB title` — `external_metadata.structures.<id>.pdb_title` when
   `fetch_ok`; otherwise `_not available_`
-- `UniProt` — from `external_metadata.uniprot_mapping.pairs`
+- `UniProt` — for each structure, find the entry in
+  `external_metadata.uniprot_mapping.pairs` whose first element matches
+  the PDB ID and use the second element (the UniProt accession). Write
+  `_not mapped_` if the second element is `null` or the PDB ID does
+  not appear in `pairs`.
 - `Organism` — `external_metadata.uniprot_entries.<acc>.organism`
   when `fetch_ok`
 - `Protein` — `external_metadata.uniprot_entries.<acc>.protein_names`
@@ -166,8 +174,12 @@ forbidden.
 If you map a moved-region range to a named subdomain (e.g.
 "corresponds to the LID subdomain"), mark this as
 `(inferred from run)` unless `external_metadata.uniprot_sparql.<acc>.domains`
-contains a domain whose range overlaps the moved region, in which
-case mark it `(per UniProt SPARQL)`.
+contains a domain whose residue range overlaps the moved region, in
+which case mark it `(per UniProt SPARQL)`. **Overlap is defined
+operationally:** parse each `domain.range` string as `start-end`
+integers, parse the moved region's `residue_range` as `[region_start,
+region_end]`, and the two overlap if and only if
+`max(domain_start, region_start) <= min(domain_end, region_end)`.
 
 ## Section 5: Top Cα Movers
 
@@ -247,7 +259,11 @@ bullet-only block is correct). Include:
 - Every string in `facts.warnings`.
 - Every residue in `facts.altloc_residues.structure_1` and
   `facts.altloc_residues.structure_2`, grouped by structure.
-- Any `drill_down_flags` entry whose value is `false` (the corresponding level of detail was skipped for this run).
+- Any boolean flag inside `drill_down_flags` that is `false` — the
+  corresponding level of detail was skipped for this run. Do not look
+  up `drill_down_flags.reasons[<flag>]` here: `reasons` holds entries
+  only for flags that were enabled by threshold crossing, so no
+  `reasons` entry exists for a false flag.
 - Any `external_metadata.warnings` entry.
 - Any `fetch_ok: false` in `external_metadata` that materially
   affected the report.
@@ -272,9 +288,14 @@ The condition is indicated by `facts.condition`. Handle it as follows:
 
 ### drill-down (default)
 
-Use when `condition` is null or unset and `facts.moved_regions` is non-empty.
-
-Render all 10 sections as specified above. No special handling.
+Use when `condition` is null or unset. If `facts.moved_regions` is
+non-empty, render all 10 sections as specified above with no special
+handling. If `facts.moved_regions` is unexpectedly empty while
+`condition` is still null, keep the drill-down variant but let
+Section 3's own empty-table rule take over (literal sentence
+`No discrete moved regions identified.`); Sections 5, 6, 7 then use
+the generic `_No entries for this run._` marker if their underlying
+facts are also empty.
 
 ### nearly_identical (`condition == "structures_nearly_identical"`)
 
@@ -314,6 +335,10 @@ If any check fails, fix the report before saving.
       bullets are used only in Sections 9 and 10.
 - [ ] The report is in English. No CJK characters.
 - [ ] All 10 sections are present, in order, either with content or
-      with the literal empty marker `_No entries for this run._`.
+      with the appropriate empty marker. Section 3 has its own
+      condition-specific sentences (`No discrete moved regions
+      identified.`, `No moved regions identified.`, or `Motion
+      detected but not localized to discrete regions.`); all other
+      sections use the generic `_No entries for this run._` marker.
 - [ ] The report's depth reflects the amount of data in this run and
       is not artificially padded or compressed.

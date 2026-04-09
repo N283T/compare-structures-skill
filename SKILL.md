@@ -1,13 +1,15 @@
 ---
 name: compare-structures
-description: Compare two protein structures (apo/holo, open/closed, WT/mutant, etc.) using ChimeraX and explain the conformational change in Japanese. Use when the user provides two PDB IDs or two structure files and asks for a structural comparison or conformational analysis.
+description: Compare two protein structures (apo/holo, open/closed, WT/mutant, etc.) using ChimeraX and explain the conformational change in a rich English report with a short Japanese chat summary. Use when the user provides two PDB IDs or two structure files and asks for a structural comparison or conformational analysis.
 allowed-tools: Read, Write, Bash, mcp__togomcp__*
 ---
 
 # compare-structures
 
-Compare two protein structures via headless ChimeraX and produce a Japanese
-analytical report grounded strictly in computed facts.
+Compare two protein structures via headless ChimeraX and produce a rich
+English analytical report grounded in run-derived facts plus DB-looked-up
+structural context. A short Japanese chat summary is returned to the user
+alongside the English `report.md` artifact.
 
 ## Workflow
 

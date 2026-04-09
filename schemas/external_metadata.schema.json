@@ -13,7 +13,8 @@
   "properties": {
     "fetched_at": {
       "type": "string",
-      "description": "ISO 8601 UTC timestamp when the togomcp fetch began."
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp when the togomcp fetch began. The jsonschema library does not enforce 'format' without a FormatChecker; the annotation documents intent and enables stricter validators in the future."
     },
     "structures": {
       "type": "object",

@@ -306,7 +306,7 @@ Bullets (genuine enumeration). Includes:
 
 - `facts.warnings` contents (low sequence identity, multiple models, etc.)
 - Altloc residues present (`facts.altloc_residues`)
-- `drill_down_flags` that were off, with reasons
+- Any boolean flag inside `drill_down_flags` whose value is `false` (the corresponding level of detail was skipped; note that `drill_down_flags.reasons` only holds entries for flags that were enabled by threshold crossing, so no reason string is available for a false flag)
 - Any `external_metadata.warnings` entries
 - Any `fetch_ok=false` entries that affected the report
 

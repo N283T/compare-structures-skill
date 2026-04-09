@@ -796,8 +796,11 @@ bullet-only block is correct). Include:
 - Every string in `facts.warnings`.
 - Every residue in `facts.altloc_residues.structure_1` and
   `facts.altloc_residues.structure_2`, grouped by structure.
-- Any `drill_down_flags` entry whose value is false, with the
-  `reasons` string.
+- Any boolean flag inside `drill_down_flags` whose value is `false`
+  (the corresponding level of detail was skipped; do NOT look up
+  `drill_down_flags.reasons[<flag>]` here — that dict only stores
+  entries for flags enabled by threshold crossing, so no reason
+  string exists for a false flag).
 - Any `external_metadata.warnings` entry.
 - Any `fetch_ok: false` in `external_metadata` that materially
   affected the report.
