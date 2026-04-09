@@ -3,14 +3,14 @@
 from __future__ import annotations
 
 # Thresholds — see design spec §7.
-DRILL_DOWN_RMSD_THRESHOLD: float = 2.0     # Å
-NEARLY_IDENTICAL_RMSD: float = 0.5         # Å
-MIN_MOVED_DISPLACEMENT: float = 3.0        # Å
-MIN_REGION_LENGTH: int = 3                 # residues
-GAP_TOLERANCE: int = 3                     # residues
-SASA_REPORT_THRESHOLD: float = 30.0        # Å² per residue
-SASA_TOTAL_REPORT_THRESHOLD: float = 100.0 # Å² total
-LOW_IDENTITY_THRESHOLD: float = 0.30       # fraction
+DRILL_DOWN_RMSD_THRESHOLD: float = 2.0  # Å
+NEARLY_IDENTICAL_RMSD: float = 0.5  # Å
+MIN_MOVED_DISPLACEMENT: float = 3.0  # Å
+MIN_REGION_LENGTH: int = 3  # residues
+GAP_TOLERANCE: int = 3  # residues
+SASA_REPORT_THRESHOLD: float = 30.0  # Å² per residue
+SASA_TOTAL_REPORT_THRESHOLD: float = 100.0  # Å² total
+LOW_IDENTITY_THRESHOLD: float = 0.30  # fraction
 DEFAULT_TIMEOUT_SECONDS: int = 1800
 
 
@@ -36,8 +36,7 @@ def compute_drill_down_flags(
     if overall_rmsd > DRILL_DOWN_RMSD_THRESHOLD:
         flags["report_residue_level"] = True
         flags["reasons"]["report_residue_level"] = (
-            f"overall RMSD {overall_rmsd:.2f} \u00c5 > threshold "
-            f"{DRILL_DOWN_RMSD_THRESHOLD} \u00c5"
+            f"overall RMSD {overall_rmsd:.2f} \u00c5 > threshold {DRILL_DOWN_RMSD_THRESHOLD} \u00c5"
         )
     if abs(total_sasa_delta) > SASA_TOTAL_REPORT_THRESHOLD:
         flags["report_sasa"] = True
