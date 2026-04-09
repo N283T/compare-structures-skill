@@ -22,33 +22,40 @@ def _make_raw(disps_per_residue, n=10, chain="A"):
     res_1 = []
     res_2 = []
     for i, d in enumerate(disps_per_residue, start=1):
-        res_1.append({
-            "chain_id": chain,
-            "res_num": i,
-            "res_name": "ALA",
-            "ca_coord": [0.0, 0.0, 0.0],
-            "sasa": 100.0,
-            "ss_type": "C",
-            "altloc_ids": [],
-            "max_occupancy": 1.0,
-        })
-        res_2.append({
-            "chain_id": chain,
-            "res_num": i,
-            "res_name": "ALA",
-            "ca_coord": [float(d), 0.0, 0.0],
-            "sasa": 100.0,
-            "ss_type": "C",
-            "altloc_ids": [],
-            "max_occupancy": 1.0,
-        })
+        res_1.append(
+            {
+                "chain_id": chain,
+                "res_num": i,
+                "res_name": "ALA",
+                "ca_coord": [0.0, 0.0, 0.0],
+                "sasa": 100.0,
+                "ss_type": "C",
+                "altloc_ids": [],
+                "max_occupancy": 1.0,
+            }
+        )
+        res_2.append(
+            {
+                "chain_id": chain,
+                "res_num": i,
+                "res_name": "ALA",
+                "ca_coord": [float(d), 0.0, 0.0],
+                "sasa": 100.0,
+                "ss_type": "C",
+                "altloc_ids": [],
+                "max_occupancy": 1.0,
+            }
+        )
     return {
         "input1": {"id": "test_a", "source": "file", "model_id": 1},
         "input2": {"id": "test_b", "source": "file", "model_id": 2},
         "matchmaker": {
-            "reference_model": 1, "moved_model": 2,
-            "full_rmsd": 0.0, "final_rmsd": 0.0,
-            "n_full_pairs": n, "n_final_pairs": n,
+            "reference_model": 1,
+            "moved_model": 2,
+            "full_rmsd": 0.0,
+            "final_rmsd": 0.0,
+            "n_full_pairs": n,
+            "n_final_pairs": n,
             "per_chain": [],
         },
         "chains": [

@@ -45,8 +45,7 @@ def cluster_moved_regions(
     """
     if len(residues) != len(displacements):
         raise ValueError(
-            f"residues and displacements length mismatch: "
-            f"{len(residues)} vs {len(displacements)}"
+            f"residues and displacements length mismatch: {len(residues)} vs {len(displacements)}"
         )
     if len(residues) == 0:
         return []
