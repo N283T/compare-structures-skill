@@ -62,7 +62,7 @@ Never silently omit a section; if a section has no content under the
 current condition, render the heading and an explicit empty marker
 `_No entries for this run._`.
 
-### Section 1: Header
+## Section 1: Header
 
 Render as:
 
@@ -76,7 +76,7 @@ n aligned residues, sequence identity as percent, number of moved
 regions, and the largest max Cα displacement in Å>.
 ```
 
-### Section 2: Global Alignment Metrics
+## Section 2: Global Alignment Metrics
 
 A single markdown table with two columns (`Metric`, `Value`) and no
 prose. Include these rows, in this order, pulling values from
@@ -96,11 +96,11 @@ prose. Include these rows, in this order, pulling values from
 8. Total |ΔSASA| — `facts.sasa_changes.total_delta_angstrom2` Å²
 9. Moved regions — `len(facts.moved_regions)`
 
-### Section 3: Moved Regions Comparison
+## Section 3: Moved Regions Comparison
 
-A markdown table with one column per entry in `facts.moved_regions`
-(so two columns of values for two regions, three for three, and so
-on). Rows:
+A markdown table with a `Field` column plus one column per entry in
+`facts.moved_regions` (so two value columns for two regions, three
+for three, and so on). Rows:
 
 - Residue range — `residue_range_label`
 - n residues — `n_residues`
@@ -120,12 +120,12 @@ If `facts.moved_regions` is empty, replace the table with the literal
 sentence `No discrete moved regions identified.` and skip the
 comparative prose.
 
-### Section 4: Structural Context
+## Section 4: Structural Context
 
 This is the only section where DB-derived facts and training-data
 background are combined. Render it as three subsections.
 
-#### Section 4a: Structure metadata
+### Section 4a: Structure metadata
 
 A markdown table with three columns (`Field`, `Structure 1`,
 `Structure 2`) and these rows:
@@ -142,7 +142,7 @@ A markdown table with three columns (`Field`, `Structure 1`,
   `per RCSB, per UniProt P69441 (via togomcp)` or
   `_DB lookup unavailable_` if every fetch failed
 
-#### Section 4b: DB-derived interpretation
+### Section 4b: DB-derived interpretation
 
 One paragraph drawing only on `external_metadata.json`. Every factual
 claim must carry `(per RCSB)`, `(per UniProt <acc>)`, or
@@ -154,7 +154,7 @@ If all `fetch_ok` fields are false, replace this subsection with the
 single sentence `Structural context assembled from training data
 only; live DB lookup unavailable.`
 
-#### Section 4c: Background and motion interpretation
+### Section 4c: Background and motion interpretation
 
 One or two paragraphs drawing on training-data knowledge of the
 protein's architecture and dynamics. Every claim must carry
@@ -169,7 +169,7 @@ If you map a moved-region range to a named subdomain (e.g.
 contains a domain whose range overlaps the moved region, in which
 case mark it `(per UniProt SPARQL)`.
 
-### Section 5: Top Cα Movers
+## Section 5: Top Cα Movers
 
 A markdown table of the top entries in `facts.top_ca_movers` (up to
 ten). Columns:
@@ -189,7 +189,7 @@ After the table, write 1 or 2 sentences describing spatial clustering:
 which region dominates, whether the movers are contiguous, whether
 the maximum sits at the edge or the middle of a region.
 
-### Section 6: Secondary Structure Changes by Region
+## Section 6: Secondary Structure Changes by Region
 
 For each entry in `facts.moved_regions`, write a subsection with an
 H4 heading `Region <k> (<residue_range_label>)` followed by a table
@@ -207,7 +207,7 @@ subsection `Outside moved regions` with the same table columns.
 If `facts.ss_changes` is empty, replace the whole section body with
 `_No entries for this run._`.
 
-### Section 7: SASA Highlights
+## Section 7: SASA Highlights
 
 Two markdown tables drawn from `facts.sasa_changes`.
 
@@ -226,7 +226,7 @@ bury or expose).
 If both `top_increases` and `top_decreases` are empty, replace the
 whole section body with `_No entries for this run._`.
 
-### Section 8: Integrated Interpretation
+## Section 8: Integrated Interpretation
 
 One or two paragraphs of prose synthesis. This is the only section
 where run facts, DB facts, and training-data background may be woven
@@ -239,7 +239,7 @@ provenance marker. Structure the synthesis to cover, in order:
   (background), tied to the motion pattern above.
 - Any mismatch between expectation and the run observations.
 
-### Section 9: Caveats and Limitations
+## Section 9: Caveats and Limitations
 
 Bullets (genuine enumeration; this is the one section where a
 bullet-only block is correct). Include:
@@ -247,8 +247,7 @@ bullet-only block is correct). Include:
 - Every string in `facts.warnings`.
 - Every residue in `facts.altloc_residues.structure_1` and
   `facts.altloc_residues.structure_2`, grouped by structure.
-- Any `drill_down_flags` entry whose value is false, with the
-  `reasons` string.
+- Any `drill_down_flags` entry whose value is `false` (the corresponding level of detail was skipped for this run).
 - Any `external_metadata.warnings` entry.
 - Any `fetch_ok: false` in `external_metadata` that materially
   affected the report.
@@ -256,7 +255,7 @@ bullet-only block is correct). Include:
 If none of these bullets have content, write `_No caveats for this
 run._`.
 
-### Section 10: Artifacts and Reproduction
+## Section 10: Artifacts and Reproduction
 
 Bullets listing the artifacts in the run directory, then the
 reproduction command:
@@ -271,8 +270,9 @@ reproduction command:
 
 The condition is indicated by `facts.condition`. Handle it as follows:
 
-### drill-down (default; `condition` is null or unset and
-`facts.moved_regions` is non-empty)
+### drill-down (default)
+
+Use when `condition` is null or unset and `facts.moved_regions` is non-empty.
 
 Render all 10 sections as specified above. No special handling.
 

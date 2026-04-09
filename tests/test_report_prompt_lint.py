@@ -49,7 +49,7 @@ def test_six_hard_rules_present(prompt_text: str):
         "(run-derived)",
         "(inferred from run)",
         "(per RCSB)",
-        "(per UniProt",
+        "(per UniProt <acc>)",
         "(per UniProt SPARQL)",
         "(general background)",
     ],
@@ -85,9 +85,7 @@ def test_section_order(prompt_text: str):
         match = re.search(rf"Section {n}:", prompt_text)
         assert match, f"Section {n} header missing"
         positions.append(match.start())
-    assert positions == sorted(positions), (
-        f"Sections are out of order: {positions}"
-    )
+    assert positions == sorted(positions), f"Sections are out of order: {positions}"
 
 
 def test_condition_variants_documented(prompt_text: str):
