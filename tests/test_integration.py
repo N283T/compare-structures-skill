@@ -9,7 +9,6 @@ If CHIMERAX_PATH is unset and 'chimerax' is not on PATH, these tests are skipped
 
 import json
 import os
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -20,9 +19,22 @@ _REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 def _chimerax_available() -> bool:
-    if os.environ.get("CHIMERAX_PATH"):
-        return Path(os.environ["CHIMERAX_PATH"]).is_file()
-    return shutil.which("chimerax") is not None
+    """Mirror the skill's own resolver so tests skip iff the CLI can't find ChimeraX."""
+    # Adjust sys.path so the import works regardless of cwd.
+    if str(_REPO_ROOT) not in sys.path:
+        sys.path.insert(0, str(_REPO_ROOT))
+    try:
+        from compare_structures.validators import (
+            InputValidationError,
+            resolve_chimerax_executable,
+        )
+    except ImportError:
+        return False
+    try:
+        resolve_chimerax_executable()
+    except InputValidationError:
+        return False
+    return True
 
 
 pytestmark = [
