@@ -55,6 +55,16 @@ ln -s /path/to/compare-structures-skill ~/.claude/skills/compare-structures
 - [ChimeraX](https://www.cgl.ucsf.edu/chimerax/) 1.9 or newer
 - [uv](https://docs.astral.sh/uv/) for running `analyze.py`
 - Set `CHIMERAX_PATH` if ChimeraX is not on your `PATH`
+- [togomcp](https://github.com/dbcls/togomcp) registered as an MCP
+  server in Claude Code. The skill fetches PDB titles, UniProt
+  accessions, protein names, organisms, and SPARQL-derived
+  function/domain data through togomcp's `list_databases`,
+  `search_pdb_entity`, `togoid_convertId`, `search_uniprot_entity`,
+  `get_MIE_file`, and `run_sparql` tools. You can either point at the
+  hosted server at <https://togomcp.rdfportal.org/> or run it locally
+  via `git clone https://github.com/dbcls/togomcp && cd togomcp && uv sync`
+  (local mode additionally requires an `NCBI_API_KEY`). See the
+  togomcp README for the exact MCP server config.
 
 ## Direct CLI usage
 
