@@ -113,9 +113,43 @@ def ss_changes(paired: list[PairedResidue]) -> list[PairedResidue]:
     return [p for p in paired if p.ss_1 != p.ss_2]
 
 
-def kabsch_transform(points_1, points_2):  # noqa: ARG001
-    raise NotImplementedError
+def kabsch_transform(
+    points_1: np.ndarray,
+    points_2: np.ndarray,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Optimal rigid transform mapping points_1 onto points_2 (Kabsch algorithm).
+
+    Returns (R, t) where ``points_1 @ R.T + t`` best approximates ``points_2``
+    in a least-squares sense. Both inputs must be shape (N, 3) with N >= 3.
+    The rotation matrix is guaranteed to have determinant +1 (no reflections).
+    """
+    points_1 = np.asarray(points_1, dtype=float)
+    points_2 = np.asarray(points_2, dtype=float)
+    if points_1.shape != points_2.shape:
+        raise ValueError(f"shape mismatch: {points_1.shape} vs {points_2.shape}")
+    if points_1.ndim != 2 or points_1.shape[1] != 3:
+        raise ValueError(f"expected (N, 3) arrays, got {points_1.shape}")
+    if points_1.shape[0] < 3:
+        raise ValueError(f"need at least 3 points, got {points_1.shape[0]}")
+
+    c1 = points_1.mean(axis=0)
+    c2 = points_2.mean(axis=0)
+    q1 = points_1 - c1
+    q2 = points_2 - c2
+
+    H = q1.T @ q2
+    U, _s, Vt = np.linalg.svd(H)
+    d = np.sign(np.linalg.det(Vt.T @ U.T))
+    D = np.diag([1.0, 1.0, d])
+    R = Vt.T @ D @ U.T
+    t = c2 - R @ c1
+    return R, t
 
 
-def rotation_angle_deg(R):  # noqa: ARG001
-    raise NotImplementedError
+def rotation_angle_deg(R: np.ndarray) -> float:
+    """Extract the rotation angle (degrees) from a 3x3 rotation matrix."""
+    R = np.asarray(R, dtype=float)
+    trace = np.trace(R)
+    cos_theta = (trace - 1.0) / 2.0
+    cos_theta = float(np.clip(cos_theta, -1.0, 1.0))
+    return float(np.degrees(np.arccos(cos_theta)))

@@ -6,10 +6,10 @@ import pytest  # noqa: F401
 from compare_structures.metrics import (
     PairedResidue,  # noqa: F401
     displacement,
-    kabsch_transform,  # noqa: F401
+    kabsch_transform,
     pair_residues,
     rmsd,
-    rotation_angle_deg,  # noqa: F401
+    rotation_angle_deg,
     sasa_deltas,
     sequence_identity,
     ss_changes,
@@ -165,3 +165,41 @@ class TestSsChanges:
         c1 = [_make_residue(1, "A", (0, 0, 0), ss="H")]
         c2 = [_make_residue(1, "A", (0, 0, 0), ss="H")]
         assert ss_changes(pair_residues(c1, c2)) == []
+
+
+class TestKabsch:
+    def test_identity_gives_identity_rotation(self):
+        points = np.array([[0, 0, 0], [1, 0, 0], [0, 1, 0], [0, 0, 1]], dtype=float)
+        R, t = kabsch_transform(points, points)
+        assert np.allclose(R, np.eye(3), atol=1e-9)
+        assert np.allclose(t, np.zeros(3), atol=1e-9)
+
+    def test_pure_translation(self):
+        p1 = np.array([[0, 0, 0], [1, 0, 0], [0, 1, 0], [0, 0, 1]], dtype=float)
+        shift = np.array([5, -3, 2], dtype=float)
+        p2 = p1 + shift
+        R, t = kabsch_transform(p1, p2)
+        assert np.allclose(R, np.eye(3), atol=1e-9)
+        assert np.allclose(t, shift, atol=1e-9)
+
+    def test_90_deg_rotation_about_z(self):
+        p1 = np.array([[1, 0, 0], [0, 1, 0], [-1, 0, 0], [0, -1, 0]], dtype=float)
+        # Rotate 90 deg around z: (x,y,z) -> (-y, x, z)
+        p2 = np.array([[0, 1, 0], [-1, 0, 0], [0, -1, 0], [1, 0, 0]], dtype=float)
+        R, t = kabsch_transform(p1, p2)
+        expected = np.array([[0, -1, 0], [1, 0, 0], [0, 0, 1]], dtype=float)
+        assert np.allclose(R, expected, atol=1e-9)
+        assert np.allclose(t, np.zeros(3), atol=1e-9)
+
+
+class TestRotationAngleDeg:
+    def test_identity(self):
+        assert abs(rotation_angle_deg(np.eye(3))) < 1e-9
+
+    def test_90_deg(self):
+        R = np.array([[0, -1, 0], [1, 0, 0], [0, 0, 1]], dtype=float)
+        assert abs(rotation_angle_deg(R) - 90.0) < 1e-9
+
+    def test_180_deg(self):
+        R = np.array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]], dtype=float)
+        assert abs(rotation_angle_deg(R) - 180.0) < 1e-9
