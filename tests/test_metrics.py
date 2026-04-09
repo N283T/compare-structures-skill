@@ -10,9 +10,9 @@ from compare_structures.metrics import (
     pair_residues,
     rmsd,
     rotation_angle_deg,  # noqa: F401
-    sasa_deltas,  # noqa: F401
+    sasa_deltas,
     sequence_identity,
-    ss_changes,  # noqa: F401
+    ss_changes,
 )
 
 
@@ -120,3 +120,48 @@ class TestSequenceIdentity:
 
     def test_empty(self):
         assert sequence_identity([]) == 0.0
+
+
+class TestSasaDeltas:
+    def test_filters_small_changes(self):
+        c1 = [
+            _make_residue(1, "A", (0, 0, 0), sasa=100.0),
+            _make_residue(2, "B", (0, 0, 0), sasa=200.0),
+            _make_residue(3, "C", (0, 0, 0), sasa=50.0),
+        ]
+        c2 = [
+            _make_residue(1, "A", (0, 0, 0), sasa=105.0),  # delta +5  (below)
+            _make_residue(2, "B", (0, 0, 0), sasa=150.0),  # delta -50 (above)
+            _make_residue(3, "C", (0, 0, 0), sasa=90.0),  # delta +40 (above)
+        ]
+        paired = pair_residues(c1, c2)
+        total, decreases, increases = sasa_deltas(paired, min_abs_delta=30.0)
+        assert abs(total - (-5)) < 1e-9  # 5 - 50 + 40
+        assert len(decreases) == 1
+        assert decreases[0][0].res_num == 2
+        assert abs(decreases[0][1] - (-50.0)) < 1e-9
+        assert len(increases) == 1
+        assert increases[0][0].res_num == 3
+
+    def test_empty_paired(self):
+        total, dec, inc = sasa_deltas([], min_abs_delta=30.0)
+        assert total == 0.0
+        assert dec == []
+        assert inc == []
+
+
+class TestSsChanges:
+    def test_detects_helix_to_coil(self):
+        c1 = [_make_residue(1, "A", (0, 0, 0), ss="H"), _make_residue(2, "B", (0, 0, 0), ss="H")]
+        c2 = [_make_residue(1, "A", (0, 0, 0), ss="H"), _make_residue(2, "B", (0, 0, 0), ss="C")]
+        paired = pair_residues(c1, c2)
+        changes = ss_changes(paired)
+        assert len(changes) == 1
+        assert changes[0].res_num == 2
+        assert changes[0].ss_1 == "H"
+        assert changes[0].ss_2 == "C"
+
+    def test_no_changes(self):
+        c1 = [_make_residue(1, "A", (0, 0, 0), ss="H")]
+        c2 = [_make_residue(1, "A", (0, 0, 0), ss="H")]
+        assert ss_changes(pair_residues(c1, c2)) == []

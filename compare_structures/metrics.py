@@ -86,13 +86,31 @@ def sequence_identity(paired: list[PairedResidue]) -> float:
     return matches / len(paired)
 
 
-# Stubs — implementations land in Tasks 6, 7.
-def sasa_deltas(paired, min_abs_delta):  # noqa: ARG001
-    raise NotImplementedError
+def sasa_deltas(
+    paired: list[PairedResidue],
+    min_abs_delta: float,
+) -> tuple[float, list[tuple[PairedResidue, float]], list[tuple[PairedResidue, float]]]:
+    """Compute total ΔSASA and per-residue filtered lists of decreases and increases.
+
+    Returns (total_delta, decreases, increases).
+      - total_delta: sum over all paired residues of (sasa_2 - sasa_1), in Å².
+      - decreases: sorted ascending (most negative first), filtered by |delta| >= min_abs_delta.
+      - increases: sorted descending (most positive first), same filter.
+    Each list element is (PairedResidue, delta).
+    """
+    if not paired:
+        return 0.0, [], []
+    deltas = [(p, p.sasa_2 - p.sasa_1) for p in paired]
+    total = float(sum(d for _, d in deltas))
+    filtered = [(p, d) for p, d in deltas if abs(d) >= min_abs_delta]
+    decreases = sorted((x for x in filtered if x[1] < 0), key=lambda x: x[1])
+    increases = sorted((x for x in filtered if x[1] > 0), key=lambda x: -x[1])
+    return total, decreases, increases
 
 
-def ss_changes(paired):  # noqa: ARG001
-    raise NotImplementedError
+def ss_changes(paired: list[PairedResidue]) -> list[PairedResidue]:
+    """Return paired residues where the normalized SS type differs."""
+    return [p for p in paired if p.ss_1 != p.ss_2]
 
 
 def kabsch_transform(points_1, points_2):  # noqa: ARG001
