@@ -1,8 +1,5 @@
 """Tests for compare_structures.validators."""
 
-import os
-from pathlib import Path
-
 import pytest
 
 from compare_structures.validators import (

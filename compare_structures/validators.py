@@ -28,9 +28,7 @@ def validate_input(value: str) -> dict[str, object]:
     # otherwise assume the user intended a PDB ID and failed the format check.
     looks_like_path = os.sep in value or value.startswith(".") or "." in os.path.basename(value)
     if not looks_like_path:
-        raise InputValidationError(
-            f"not a valid PDB ID and not an existing file path: {value!r}"
-        )
+        raise InputValidationError(f"not a valid PDB ID and not an existing file path: {value!r}")
 
     path = Path(value).expanduser().resolve()
     if not path.is_file():
