@@ -92,8 +92,16 @@ def _extract_altloc_info(residue):
     return alt_ids, max_occ
 
 
-def _collect_residue_data(model, model_idx: int) -> list[dict]:
-    # Run measure sasa first so residue.area is populated.
+def _collect_residue_data(
+    model, model_idx: int, allowed_chains: set[str] | None = None
+) -> list[dict]:
+    """Extract per-residue data for ``model``.
+
+    If ``allowed_chains`` is provided, only residues from those chain IDs are
+    included. This is used after matchmaker to drop chains the alignment
+    didn't actually pair — otherwise e.g. homodimer chain B (unaligned) would
+    pollute the overall RMSD downstream.
+    """
     from chimerax.core.commands import run
 
     run(session, f"measure sasa #{model_idx}")
@@ -104,6 +112,8 @@ def _collect_residue_data(model, model_idx: int) -> list[dict]:
         if principal is None:
             continue  # non-polymer or missing Cα
         chain_id = residue.chain_id
+        if allowed_chains is not None and chain_id not in allowed_chains:
+            continue
         ca = principal.scene_coord  # numpy 3-vector in aligned frame
         alt_ids, max_occ = _extract_altloc_info(residue)
         entry = {
@@ -122,6 +132,19 @@ def _collect_residue_data(model, model_idx: int) -> list[dict]:
         {"chain_id": cid, "model": model_idx, "residues": residues}
         for cid, residues in sorted(chains_out.items())
     ]
+
+
+def _aligned_chain_ids(match_results, which: str) -> set[str]:
+    """Collect chain IDs that actually appear in the matchmaker ``full`` atoms.
+
+    ``which`` is either ``"full ref atoms"`` or ``"full match atoms"``.
+    """
+    chains: set[str] = set()
+    for r in match_results:
+        atoms = r[which]
+        for atom in atoms:
+            chains.add(atom.residue.chain_id)
+    return chains
 
 
 def main(argv: list[str]) -> int:
@@ -171,8 +194,13 @@ def main(argv: list[str]) -> int:
         final_rmsd = (final_rmsd_weighted_sum / n_final_total) ** 0.5 if n_final_total else 0.0
 
         # Extract per-residue data AFTER matchmaker so scene_coord is aligned.
-        chains_1 = _collect_residue_data(model_1, 1)
-        chains_2 = _collect_residue_data(model_2, 2)
+        # Restrict to chains the matchmaker actually aligned; otherwise unpaired
+        # chains (e.g. homodimer chain B when pairing is best-best) would survive
+        # into raw.json and pollute the overall RMSD downstream.
+        ref_chains = _aligned_chain_ids(mm_results, "full ref atoms")
+        match_chains = _aligned_chain_ids(mm_results, "full match atoms")
+        chains_1 = _collect_residue_data(model_1, 1, allowed_chains=ref_chains)
+        chains_2 = _collect_residue_data(model_2, 2, allowed_chains=match_chains)
 
         # Save aligned mmCIF with both models.
         run(session, f"save '{aligned_out}' format mmcif models #1,2")
@@ -211,5 +239,7 @@ def main(argv: list[str]) -> int:
         return 1
 
 
-if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:]))
+# ChimeraX executes --script files with __name__ set to a sandbox module name
+# (e.g. "ChimeraX_sandbox_1"), not "__main__", so the usual guard would be dead
+# code. Run main() unconditionally at import time.
+sys.exit(main(sys.argv[1:]))

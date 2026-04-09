@@ -61,10 +61,13 @@ def test_1ake_vs_4ake(tmp_path):
     facts = json.loads((out / "facts.json").read_text())
 
     # Overall metrics (ranges tolerate ChimeraX version drift).
+    # Ground truth for 1AKE vs 4AKE (ChimeraX 1.11, full pre-iteration RMSD):
+    # overall_rmsd ≈ 8.24 Å, n_aligned = 214. Bounds give headroom for minor
+    # ChimeraX scoring changes across versions.
     rmsd = facts["alignment"]["overall_rmsd_angstrom"]
-    assert 5.0 <= rmsd <= 7.5, f"unexpected rmsd {rmsd}"
+    assert 6.0 <= rmsd <= 10.0, f"unexpected rmsd {rmsd}"
     n_aligned = facts["alignment"]["n_aligned_residues"]
-    assert 180 <= n_aligned <= 220, f"unexpected n_aligned {n_aligned}"
+    assert 200 <= n_aligned <= 220, f"unexpected n_aligned {n_aligned}"
 
     # Drill-down expected for adenylate kinase open/closed.
     assert facts["drill_down_flags"]["report_residue_level"] is True
