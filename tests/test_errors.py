@@ -10,6 +10,7 @@ from compare_structures.errors import write_error
 
 def _load_error_schema():
     import pathlib
+
     schema_path = pathlib.Path(__file__).parent.parent / "schemas" / "error.schema.json"
     return json.loads(schema_path.read_text())
 
