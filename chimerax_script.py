@@ -175,7 +175,7 @@ def main(argv: list[str]) -> int:
         chains_2 = _collect_residue_data(model_2, 2)
 
         # Save aligned mmCIF with both models.
-        run(session, f"save {aligned_out} format mmcif models #1,2")
+        run(session, f"save '{aligned_out}' format mmcif models #1,2")
 
         chimerax_version = "unknown"
         try:
